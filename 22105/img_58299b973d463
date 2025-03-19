@@ -1,0 +1,2750 @@
+<!DOCTYPE html>
+<html lang="en" prefix="fb: http://www.facebook.com/2008/fbml">
+<head>
+<meta charset="UTF-8">
+<title>Add text to Animated GIFs</title>
+<meta name="description" content="Online tool for adding text captions or subtitles to animated GIFs. You can select the font, size and text postion on the image. Create GIF movies.">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="/css/m.css" type="text/css">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+<script src="/js/m.js"></script>
+<script>window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":"/privacy","theme":"dark-bottom"};</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+</head>
+<body>
+<div id="wrapper"><div id="header">
+<a id="logo" href="/" title="Online animated GIF tools">ezGif.com <span>Animated GIFs Made Easy</span></a>
+<div id="header-infoblock">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9907860161851752" data-ad-slot="8411751230" data-ad-format="auto"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<ul id="menu">
+<li><a class="home" href="/">Home</a></li>
+<li><a class="gifmaker" href="/maker" title="Make animated gif from still frames">GIF Maker</a></li>
+<li><a class="video" href="/video-to-gif" title="Video to GIF converter">Video to GIF</a></li>
+<li><a class="resize" href="/resize" title="Resize animated image">GIF Resize</a></li>
+<li><a class="crop" href="/crop" title="Crop selection of image">GIF Crop</a></li>
+<li><a class="optimize" href="/optimize" title="Reduce animation size">GIF Optimizer &raquo;</a>
+<ul><li><a href="/optipng" title="Reduce PNG file size">PNG Optimizer</a></li><li><a href="/optijpeg" title="Reduce JPEG file size">JPEG Optimizer</a></li></ul>
+</li>
+<li class="active"><a class="effects" href="/effects" title="Add effects to animation">GIF Effects &raquo;</a><ul>
+<li><a href="/instagif" title="Apply instant color filters">Color filters</a></li>
+<li><a href="/reverse" title="Reverse GIF animation">Reverse GIF</a></li>
+<li><a href="/rotate" title="Rotate GIF">Rotate GIF</a></li>
+<li><a href="/speed" title="Change animation speed">Adjust speed</a></li>
+<li class="active"><a href="/add-text" title="Write text over gif image">Add text to GIF</a></li>
+<li><a href="/overlay" title="Place image on the gif">Add overlay</a></li>
+</ul></li>
+<li><a class="split" href="/split" title="Split GIF image to frames">GIF Split</a></li>
+</ul>
+</div>
+<div id="content" class="add-text-content">
+<div id="sidebar">
+<div id="sky">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-9907860161851752" data-ad-slot="3741257653"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+</div>
+<div id="main">
+<div id="share" class="after-title">
+<div class="social-button twitter">
+<script>function wnp(a,b,c){var d,e;return d=window.screen.width/2-(b/2+10),e=window.screen.height/2-(c/2+50),window.open(a,"Window2","status=no,height="+c+",width="+b+",resizable=yes,left="+d+",top="+e+",screenX="+d+",screenY="+e+",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no"),!1}</script>
+<a target="_blank" rel="nofollow" href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fezgif.com%2Fadd-text%2F&ref_src=twsrc%5Etfw&text=Add+text+to+Animated+GIFs&tw_p=tweetbutton&url=http%3A%2F%2Fezgif.com%2Fadd-text&via=ezgif_com" class="tw-btn" onclick="return wnp(this.href, 545, 433)">Tweet</a>
+</div>
+<div class="social-button gplus">
+<div class="g-plusone" data-size="medium" data-count="true" data-href="http://ezgif.com/add-text"></div>
+<script>(function(){ var po = document.createElement('script');po.type = 'text/javascript';po.async = true;po.src = 'https://apis.google.com/js/plusone.js';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(po, s); })();</script>
+</div>
+<div class="social-button facebook">
+<div class="fb-share-button" data-href="http://ezgif.com/add-text" data-width="110" data-type="button_count"></div>
+<div id="fb-root"></div>
+<script>(function() { var e = document.createElement('script'); e.async = true;e.src = 'https://connect.facebook.net/en_US/all.js#xfbml=1&appId=423445844398591';document.getElementById('fb-root').appendChild(e);}());</script>
+</div>
+</div>
+
+<h1>Add text to animated GIF</h1>
+
+
+<div><table class="file-menu"><tr><td><a href="/crop/f9a72553ef.gif" title="Crop image"><span class="icon"><img src="/images/icons/transform-crop-and-resize.png" alt="" /></span>crop</a></td><td><a href="/resize/f9a72553ef.gif" title="Resize image"><span class="icon"><img src="/images/icons/transform-scale.png" alt="" /></span>resize</a></td><td><a href="/optimize/f9a72553ef.gif" title="Compress image"><span class="icon"><img src="/images/icons/run-build-clean.png" alt="" /></span>optimize</a></td><td><a href="/effects/f9a72553ef.gif" title="Rotate, reverse, flip, add color filters..."><span class="icon"><img src="/images/icons/tools-wizard.png" alt="" /></span>effects</a></td><td><a href="/speed/f9a72553ef.gif" title="Change animation speed"><span class="icon"><img src="/images/icons/player-time.png" alt="" /></span>speed</a></td><td><a href="/split/f9a72553ef.gif" title="Split to frames"><span class="icon"><img src="/images/icons/split.png" alt="" /></span>split</a></td><td><a href="/add-text/f9a72553ef.gif" title="Add text over image" class="active"><span class="icon"><img src="/images/icons/insert-text.png" alt="" /></span>write</a></td><td><a href="/maker/f9a72553ef.gif" title="View and edit frames"><span class="icon"><img src="/images/icons/view-catalog.png" alt="" /></span>frames</a></td><td><a href="/overlay/f9a72553ef.gif" title="Add watermark or logo"><span class="icon"><img src="/images/icons/insert-image.png" alt="" /></span>overlay</a></td><td><a class="save" href="/save/f9a72553ef.gif"><span class="icon"><img src="/images/icons/document-save.png" alt="" /></span>save</a></td></tr></table></div>
+
+<img src="//im.ezgif.com/tmp/f9a72553ef.gif" id="target" style="max-width:100%" alt="" />
+<p class="filestats">File size: <strong>378.66K</strong>, width: 210px, height: 224px, frames: 20, type: gif</p>
+
+<h2>Enter annotations</h2>
+
+<p class="small">Hint: you can drag and drop the text to change its position on the image.</p>
+
+<form class="form ajax-form" action="/add-text">
+<input type="hidden" value="f9a72553ef.gif" name="file">
+<input type="hidden" value="91642573ea" name="token">
+
+<div id="st-frames">
+<div class="f" id="frame-1">
+<div class="i" style="width:210px;height:224px;background:transparent url('//im.ezgif.com/tmp/f9a72553ef-gif-im/frame_0_delay-0.07s.gif') no-repeat 50% 50%"></div>
+<div class="opt" style="margin-left:210px">
+<span class="frameno">#1</span>
+
+<div class="add-form">
+<input type="hidden" value="1" class="f-num" name="f1[frame]">
+<input type="hidden" value="0" class="f-left" name="f1[left]">
+<input type="hidden" value="0" class="f-top" name="f1[top]">
+<input type="hidden" value="0" class="f-dragged" name="f1[dragged]">
+<input type="hidden" value="" class="f-file" name="f1[file]">
+<textarea name="f1[text]" class="f-text" rows="2" cols="10"></textarea>
+
+<div class="txt-opt">
+<label>Font size:</label>
+<input type="text" name="f1[size]" value="32" class="text f-size">
+</div>
+
+<div class="txt-opt">
+<label>Frames:</label>1 - 
+<input type="text" name="f1[to]" value="end" class="text f-to">
+</div>
+
+<div class="txt-opt">
+<label>Font:</label>
+<select class="f-font" name="f1[font]">
+<optgroup label="Latin extended + cyrillic">
+<option value="Impact">Impact</option>
+<option value="DidactGothic">DidactGothic</option>
+<option value="EBGaramond-Regular">EBGaramond-Regular</option>
+<option value="foo">Foo</option>
+<option value="RuslanDisplay">RuslanDisplay</option>
+<option value="Jura-Regular">Jura-Regular</option>
+<option value="Jura-Light">Jura-Light</option>
+<option value="Jura-DemiBold">Jura-DemiBold</option>
+<option value="Lobster-Regular">Lobster-Regular</option>
+<option value="MarckScript-Regular">MarckScript-Regular</option>
+<option value="OpenSans-BoldItalic">OpenSans-BoldItalic</option>
+<option value="OpenSans-Regular">OpenSans-Regular</option>
+<option value="OpenSans-Bold">OpenSans-Bold</option>
+<option value="OpenSans-Italic">OpenSans-Italic</option>
+<option value="PoiretOne-Regular">PoiretOne-Regular</option>
+<option value="PT_Sans-Narrow-Web-Bold">PT_Sans-Narrow-Web-Bold</option>
+<option value="PT_Sans-Narrow-Web-Regular">PT_Sans-Narrow-Web-Regular</option>
+<option value="RussoOne-Regular">RussoOne-Regular</option>
+<option value="Ubuntu-M">Ubuntu-M</option>
+</optgroup>
+<optgroup label="Latin">
+<option value="Coiny-Regular">Coiny-Regular</option>
+<option value="ComicNeue-Regular">ComicNeue-Regular</option>
+<option value="ComicNeue-Bold">ComicNeue-Bold</option>
+<option value="Shrikhand-Regular">Shrikhand-Regular</option>
+</optgroup>
+<optgroup label="Arabic">
+<option value="Amiri-Regular">Amiri-Regular</option>
+<option value="Amiri-Bold">Amiri-Bold</option>
+<option value="Amiri-BoldSlanted">Amiri-BoldSlanted</option>
+<option value="Amiri-Slanted">Amiri-Slanted</option>
+</optgroup>
+<optgroup label="Hebrew">
+<option value="Arimo-Regular">Arimo-Regular</option>
+<option value="Arimo-Bold">Arimo-Bold</option>
+<option value="Arimo-BoldItalic">Arimo-BoldItalic</option>
+<option value="Arimo-Italic">Arimo-Italic</option>
+</optgroup>
+<optgroup label="Thai">
+<option value="Kanit-Regular">Kanit-Regular</option>
+<option value="Kanit-Bold">Kanit-Bold</option>
+<option value="Kanit-BoldItalic">Kanit-BoldItalic</option>
+</optgroup>
+<optgroup label="Tamil">
+<option value="Catamaran-Regular">Catamaran-Regular</option>
+<option value="Catamaran-Bold">Catamaran-Bold</option>
+</optgroup>
+<optgroup label="Telugu">
+<option value="Mallanna-Regular">Mallanna-Regular</option>
+<option value="Mandali-Regular">Mandali-Regular</option>
+<option value="Timmana-Regular">Timmana-Regular</option>
+</optgroup>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Align:</label>
+<select class="f-align" name="f1[align]">
+<option value="center">Center</option>
+<option value="left">Left</option>
+<option value="right">Right</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Border:</label>
+<select class="f-border" name="f1[border]">
+<option value="none">None</option>
+<option value="1" selected="selected">Light</option>
+<option value="2">Medium</option>
+<option value="3">Strong</option>
+<option value="4">Very strong</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Color:</label>
+<select class="f-color" name="f1[color]">
+<option value="White">White</option>
+<option value="Black">Black</option>
+<option value="Yellow">Yellow</option>
+<option value="Red">Red</option>
+<option value="OrangeRed">OrangeRed</option>
+<option value="Orange">Orange</option>
+<option value="Green">Green</option>
+<option value="Blue">Blue</option>
+<option value="VioletRed1">VioletRed1</option>
+<option value="DeepPink">DeepPink</option>
+<option value="orchid">orchid</option>
+<option value="LimeGreen">LimeGreen</option>
+<option value="gold">gold</option>
+<option value="LightGray">LightGray</option>
+<option value="silver">silver</option>
+<option value="DarkGray">DarkGray</option>
+</select>
+</div>
+
+
+<button class="button primary add-frame-text">Set</button>
+</div>
+
+</div>
+</div>
+<div class="f" id="frame-2">
+<div class="i" style="width:210px;height:224px;background:transparent url('//im.ezgif.com/tmp/f9a72553ef-gif-im/frame_1_delay-0.07s.gif') no-repeat 50% 50%"></div>
+<div class="opt" style="margin-left:210px">
+<span class="frameno">#2</span>
+
+<div class="add-form">
+<input type="hidden" value="2" class="f-num" name="f2[frame]">
+<input type="hidden" value="0" class="f-left" name="f2[left]">
+<input type="hidden" value="0" class="f-top" name="f2[top]">
+<input type="hidden" value="0" class="f-dragged" name="f2[dragged]">
+<input type="hidden" value="" class="f-file" name="f2[file]">
+<textarea name="f2[text]" class="f-text" rows="2" cols="10"></textarea>
+
+<div class="txt-opt">
+<label>Font size:</label>
+<input type="text" name="f2[size]" value="32" class="text f-size">
+</div>
+
+<div class="txt-opt">
+<label>Frames:</label>2 - 
+<input type="text" name="f2[to]" value="end" class="text f-to">
+</div>
+
+<div class="txt-opt">
+<label>Font:</label>
+<select class="f-font" name="f2[font]">
+<optgroup label="Latin extended + cyrillic">
+<option value="Impact">Impact</option>
+<option value="DidactGothic">DidactGothic</option>
+<option value="EBGaramond-Regular">EBGaramond-Regular</option>
+<option value="foo">Foo</option>
+<option value="RuslanDisplay">RuslanDisplay</option>
+<option value="Jura-Regular">Jura-Regular</option>
+<option value="Jura-Light">Jura-Light</option>
+<option value="Jura-DemiBold">Jura-DemiBold</option>
+<option value="Lobster-Regular">Lobster-Regular</option>
+<option value="MarckScript-Regular">MarckScript-Regular</option>
+<option value="OpenSans-BoldItalic">OpenSans-BoldItalic</option>
+<option value="OpenSans-Regular">OpenSans-Regular</option>
+<option value="OpenSans-Bold">OpenSans-Bold</option>
+<option value="OpenSans-Italic">OpenSans-Italic</option>
+<option value="PoiretOne-Regular">PoiretOne-Regular</option>
+<option value="PT_Sans-Narrow-Web-Bold">PT_Sans-Narrow-Web-Bold</option>
+<option value="PT_Sans-Narrow-Web-Regular">PT_Sans-Narrow-Web-Regular</option>
+<option value="RussoOne-Regular">RussoOne-Regular</option>
+<option value="Ubuntu-M">Ubuntu-M</option>
+</optgroup>
+<optgroup label="Latin">
+<option value="Coiny-Regular">Coiny-Regular</option>
+<option value="ComicNeue-Regular">ComicNeue-Regular</option>
+<option value="ComicNeue-Bold">ComicNeue-Bold</option>
+<option value="Shrikhand-Regular">Shrikhand-Regular</option>
+</optgroup>
+<optgroup label="Arabic">
+<option value="Amiri-Regular">Amiri-Regular</option>
+<option value="Amiri-Bold">Amiri-Bold</option>
+<option value="Amiri-BoldSlanted">Amiri-BoldSlanted</option>
+<option value="Amiri-Slanted">Amiri-Slanted</option>
+</optgroup>
+<optgroup label="Hebrew">
+<option value="Arimo-Regular">Arimo-Regular</option>
+<option value="Arimo-Bold">Arimo-Bold</option>
+<option value="Arimo-BoldItalic">Arimo-BoldItalic</option>
+<option value="Arimo-Italic">Arimo-Italic</option>
+</optgroup>
+<optgroup label="Thai">
+<option value="Kanit-Regular">Kanit-Regular</option>
+<option value="Kanit-Bold">Kanit-Bold</option>
+<option value="Kanit-BoldItalic">Kanit-BoldItalic</option>
+</optgroup>
+<optgroup label="Tamil">
+<option value="Catamaran-Regular">Catamaran-Regular</option>
+<option value="Catamaran-Bold">Catamaran-Bold</option>
+</optgroup>
+<optgroup label="Telugu">
+<option value="Mallanna-Regular">Mallanna-Regular</option>
+<option value="Mandali-Regular">Mandali-Regular</option>
+<option value="Timmana-Regular">Timmana-Regular</option>
+</optgroup>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Align:</label>
+<select class="f-align" name="f2[align]">
+<option value="center">Center</option>
+<option value="left">Left</option>
+<option value="right">Right</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Border:</label>
+<select class="f-border" name="f2[border]">
+<option value="none">None</option>
+<option value="1" selected="selected">Light</option>
+<option value="2">Medium</option>
+<option value="3">Strong</option>
+<option value="4">Very strong</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Color:</label>
+<select class="f-color" name="f2[color]">
+<option value="White">White</option>
+<option value="Black">Black</option>
+<option value="Yellow">Yellow</option>
+<option value="Red">Red</option>
+<option value="OrangeRed">OrangeRed</option>
+<option value="Orange">Orange</option>
+<option value="Green">Green</option>
+<option value="Blue">Blue</option>
+<option value="VioletRed1">VioletRed1</option>
+<option value="DeepPink">DeepPink</option>
+<option value="orchid">orchid</option>
+<option value="LimeGreen">LimeGreen</option>
+<option value="gold">gold</option>
+<option value="LightGray">LightGray</option>
+<option value="silver">silver</option>
+<option value="DarkGray">DarkGray</option>
+</select>
+</div>
+
+
+<button class="button primary add-frame-text">Set</button>
+</div>
+
+</div>
+</div>
+<div class="f" id="frame-3">
+<div class="i" style="width:210px;height:224px;background:transparent url('//im.ezgif.com/tmp/f9a72553ef-gif-im/frame_2_delay-0.07s.gif') no-repeat 50% 50%"></div>
+<div class="opt" style="margin-left:210px">
+<span class="frameno">#3</span>
+
+<div class="add-form">
+<input type="hidden" value="3" class="f-num" name="f3[frame]">
+<input type="hidden" value="0" class="f-left" name="f3[left]">
+<input type="hidden" value="0" class="f-top" name="f3[top]">
+<input type="hidden" value="0" class="f-dragged" name="f3[dragged]">
+<input type="hidden" value="" class="f-file" name="f3[file]">
+<textarea name="f3[text]" class="f-text" rows="2" cols="10"></textarea>
+
+<div class="txt-opt">
+<label>Font size:</label>
+<input type="text" name="f3[size]" value="32" class="text f-size">
+</div>
+
+<div class="txt-opt">
+<label>Frames:</label>3 - 
+<input type="text" name="f3[to]" value="end" class="text f-to">
+</div>
+
+<div class="txt-opt">
+<label>Font:</label>
+<select class="f-font" name="f3[font]">
+<optgroup label="Latin extended + cyrillic">
+<option value="Impact">Impact</option>
+<option value="DidactGothic">DidactGothic</option>
+<option value="EBGaramond-Regular">EBGaramond-Regular</option>
+<option value="foo">Foo</option>
+<option value="RuslanDisplay">RuslanDisplay</option>
+<option value="Jura-Regular">Jura-Regular</option>
+<option value="Jura-Light">Jura-Light</option>
+<option value="Jura-DemiBold">Jura-DemiBold</option>
+<option value="Lobster-Regular">Lobster-Regular</option>
+<option value="MarckScript-Regular">MarckScript-Regular</option>
+<option value="OpenSans-BoldItalic">OpenSans-BoldItalic</option>
+<option value="OpenSans-Regular">OpenSans-Regular</option>
+<option value="OpenSans-Bold">OpenSans-Bold</option>
+<option value="OpenSans-Italic">OpenSans-Italic</option>
+<option value="PoiretOne-Regular">PoiretOne-Regular</option>
+<option value="PT_Sans-Narrow-Web-Bold">PT_Sans-Narrow-Web-Bold</option>
+<option value="PT_Sans-Narrow-Web-Regular">PT_Sans-Narrow-Web-Regular</option>
+<option value="RussoOne-Regular">RussoOne-Regular</option>
+<option value="Ubuntu-M">Ubuntu-M</option>
+</optgroup>
+<optgroup label="Latin">
+<option value="Coiny-Regular">Coiny-Regular</option>
+<option value="ComicNeue-Regular">ComicNeue-Regular</option>
+<option value="ComicNeue-Bold">ComicNeue-Bold</option>
+<option value="Shrikhand-Regular">Shrikhand-Regular</option>
+</optgroup>
+<optgroup label="Arabic">
+<option value="Amiri-Regular">Amiri-Regular</option>
+<option value="Amiri-Bold">Amiri-Bold</option>
+<option value="Amiri-BoldSlanted">Amiri-BoldSlanted</option>
+<option value="Amiri-Slanted">Amiri-Slanted</option>
+</optgroup>
+<optgroup label="Hebrew">
+<option value="Arimo-Regular">Arimo-Regular</option>
+<option value="Arimo-Bold">Arimo-Bold</option>
+<option value="Arimo-BoldItalic">Arimo-BoldItalic</option>
+<option value="Arimo-Italic">Arimo-Italic</option>
+</optgroup>
+<optgroup label="Thai">
+<option value="Kanit-Regular">Kanit-Regular</option>
+<option value="Kanit-Bold">Kanit-Bold</option>
+<option value="Kanit-BoldItalic">Kanit-BoldItalic</option>
+</optgroup>
+<optgroup label="Tamil">
+<option value="Catamaran-Regular">Catamaran-Regular</option>
+<option value="Catamaran-Bold">Catamaran-Bold</option>
+</optgroup>
+<optgroup label="Telugu">
+<option value="Mallanna-Regular">Mallanna-Regular</option>
+<option value="Mandali-Regular">Mandali-Regular</option>
+<option value="Timmana-Regular">Timmana-Regular</option>
+</optgroup>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Align:</label>
+<select class="f-align" name="f3[align]">
+<option value="center">Center</option>
+<option value="left">Left</option>
+<option value="right">Right</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Border:</label>
+<select class="f-border" name="f3[border]">
+<option value="none">None</option>
+<option value="1" selected="selected">Light</option>
+<option value="2">Medium</option>
+<option value="3">Strong</option>
+<option value="4">Very strong</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Color:</label>
+<select class="f-color" name="f3[color]">
+<option value="White">White</option>
+<option value="Black">Black</option>
+<option value="Yellow">Yellow</option>
+<option value="Red">Red</option>
+<option value="OrangeRed">OrangeRed</option>
+<option value="Orange">Orange</option>
+<option value="Green">Green</option>
+<option value="Blue">Blue</option>
+<option value="VioletRed1">VioletRed1</option>
+<option value="DeepPink">DeepPink</option>
+<option value="orchid">orchid</option>
+<option value="LimeGreen">LimeGreen</option>
+<option value="gold">gold</option>
+<option value="LightGray">LightGray</option>
+<option value="silver">silver</option>
+<option value="DarkGray">DarkGray</option>
+</select>
+</div>
+
+
+<button class="button primary add-frame-text">Set</button>
+</div>
+
+</div>
+</div>
+<div class="f" id="frame-4">
+<div class="i" style="width:210px;height:224px;background:transparent url('//im.ezgif.com/tmp/f9a72553ef-gif-im/frame_3_delay-0.07s.gif') no-repeat 50% 50%"></div>
+<div class="opt" style="margin-left:210px">
+<span class="frameno">#4</span>
+
+<div class="add-form">
+<input type="hidden" value="4" class="f-num" name="f4[frame]">
+<input type="hidden" value="0" class="f-left" name="f4[left]">
+<input type="hidden" value="0" class="f-top" name="f4[top]">
+<input type="hidden" value="0" class="f-dragged" name="f4[dragged]">
+<input type="hidden" value="" class="f-file" name="f4[file]">
+<textarea name="f4[text]" class="f-text" rows="2" cols="10"></textarea>
+
+<div class="txt-opt">
+<label>Font size:</label>
+<input type="text" name="f4[size]" value="32" class="text f-size">
+</div>
+
+<div class="txt-opt">
+<label>Frames:</label>4 - 
+<input type="text" name="f4[to]" value="end" class="text f-to">
+</div>
+
+<div class="txt-opt">
+<label>Font:</label>
+<select class="f-font" name="f4[font]">
+<optgroup label="Latin extended + cyrillic">
+<option value="Impact">Impact</option>
+<option value="DidactGothic">DidactGothic</option>
+<option value="EBGaramond-Regular">EBGaramond-Regular</option>
+<option value="foo">Foo</option>
+<option value="RuslanDisplay">RuslanDisplay</option>
+<option value="Jura-Regular">Jura-Regular</option>
+<option value="Jura-Light">Jura-Light</option>
+<option value="Jura-DemiBold">Jura-DemiBold</option>
+<option value="Lobster-Regular">Lobster-Regular</option>
+<option value="MarckScript-Regular">MarckScript-Regular</option>
+<option value="OpenSans-BoldItalic">OpenSans-BoldItalic</option>
+<option value="OpenSans-Regular">OpenSans-Regular</option>
+<option value="OpenSans-Bold">OpenSans-Bold</option>
+<option value="OpenSans-Italic">OpenSans-Italic</option>
+<option value="PoiretOne-Regular">PoiretOne-Regular</option>
+<option value="PT_Sans-Narrow-Web-Bold">PT_Sans-Narrow-Web-Bold</option>
+<option value="PT_Sans-Narrow-Web-Regular">PT_Sans-Narrow-Web-Regular</option>
+<option value="RussoOne-Regular">RussoOne-Regular</option>
+<option value="Ubuntu-M">Ubuntu-M</option>
+</optgroup>
+<optgroup label="Latin">
+<option value="Coiny-Regular">Coiny-Regular</option>
+<option value="ComicNeue-Regular">ComicNeue-Regular</option>
+<option value="ComicNeue-Bold">ComicNeue-Bold</option>
+<option value="Shrikhand-Regular">Shrikhand-Regular</option>
+</optgroup>
+<optgroup label="Arabic">
+<option value="Amiri-Regular">Amiri-Regular</option>
+<option value="Amiri-Bold">Amiri-Bold</option>
+<option value="Amiri-BoldSlanted">Amiri-BoldSlanted</option>
+<option value="Amiri-Slanted">Amiri-Slanted</option>
+</optgroup>
+<optgroup label="Hebrew">
+<option value="Arimo-Regular">Arimo-Regular</option>
+<option value="Arimo-Bold">Arimo-Bold</option>
+<option value="Arimo-BoldItalic">Arimo-BoldItalic</option>
+<option value="Arimo-Italic">Arimo-Italic</option>
+</optgroup>
+<optgroup label="Thai">
+<option value="Kanit-Regular">Kanit-Regular</option>
+<option value="Kanit-Bold">Kanit-Bold</option>
+<option value="Kanit-BoldItalic">Kanit-BoldItalic</option>
+</optgroup>
+<optgroup label="Tamil">
+<option value="Catamaran-Regular">Catamaran-Regular</option>
+<option value="Catamaran-Bold">Catamaran-Bold</option>
+</optgroup>
+<optgroup label="Telugu">
+<option value="Mallanna-Regular">Mallanna-Regular</option>
+<option value="Mandali-Regular">Mandali-Regular</option>
+<option value="Timmana-Regular">Timmana-Regular</option>
+</optgroup>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Align:</label>
+<select class="f-align" name="f4[align]">
+<option value="center">Center</option>
+<option value="left">Left</option>
+<option value="right">Right</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Border:</label>
+<select class="f-border" name="f4[border]">
+<option value="none">None</option>
+<option value="1" selected="selected">Light</option>
+<option value="2">Medium</option>
+<option value="3">Strong</option>
+<option value="4">Very strong</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Color:</label>
+<select class="f-color" name="f4[color]">
+<option value="White">White</option>
+<option value="Black">Black</option>
+<option value="Yellow">Yellow</option>
+<option value="Red">Red</option>
+<option value="OrangeRed">OrangeRed</option>
+<option value="Orange">Orange</option>
+<option value="Green">Green</option>
+<option value="Blue">Blue</option>
+<option value="VioletRed1">VioletRed1</option>
+<option value="DeepPink">DeepPink</option>
+<option value="orchid">orchid</option>
+<option value="LimeGreen">LimeGreen</option>
+<option value="gold">gold</option>
+<option value="LightGray">LightGray</option>
+<option value="silver">silver</option>
+<option value="DarkGray">DarkGray</option>
+</select>
+</div>
+
+
+<button class="button primary add-frame-text">Set</button>
+</div>
+
+</div>
+</div>
+<div class="f" id="frame-5">
+<div class="i" style="width:210px;height:224px;background:transparent url('//im.ezgif.com/tmp/f9a72553ef-gif-im/frame_4_delay-0.07s.gif') no-repeat 50% 50%"></div>
+<div class="opt" style="margin-left:210px">
+<span class="frameno">#5</span>
+
+<div class="add-form">
+<input type="hidden" value="5" class="f-num" name="f5[frame]">
+<input type="hidden" value="0" class="f-left" name="f5[left]">
+<input type="hidden" value="0" class="f-top" name="f5[top]">
+<input type="hidden" value="0" class="f-dragged" name="f5[dragged]">
+<input type="hidden" value="" class="f-file" name="f5[file]">
+<textarea name="f5[text]" class="f-text" rows="2" cols="10"></textarea>
+
+<div class="txt-opt">
+<label>Font size:</label>
+<input type="text" name="f5[size]" value="32" class="text f-size">
+</div>
+
+<div class="txt-opt">
+<label>Frames:</label>5 - 
+<input type="text" name="f5[to]" value="end" class="text f-to">
+</div>
+
+<div class="txt-opt">
+<label>Font:</label>
+<select class="f-font" name="f5[font]">
+<optgroup label="Latin extended + cyrillic">
+<option value="Impact">Impact</option>
+<option value="DidactGothic">DidactGothic</option>
+<option value="EBGaramond-Regular">EBGaramond-Regular</option>
+<option value="foo">Foo</option>
+<option value="RuslanDisplay">RuslanDisplay</option>
+<option value="Jura-Regular">Jura-Regular</option>
+<option value="Jura-Light">Jura-Light</option>
+<option value="Jura-DemiBold">Jura-DemiBold</option>
+<option value="Lobster-Regular">Lobster-Regular</option>
+<option value="MarckScript-Regular">MarckScript-Regular</option>
+<option value="OpenSans-BoldItalic">OpenSans-BoldItalic</option>
+<option value="OpenSans-Regular">OpenSans-Regular</option>
+<option value="OpenSans-Bold">OpenSans-Bold</option>
+<option value="OpenSans-Italic">OpenSans-Italic</option>
+<option value="PoiretOne-Regular">PoiretOne-Regular</option>
+<option value="PT_Sans-Narrow-Web-Bold">PT_Sans-Narrow-Web-Bold</option>
+<option value="PT_Sans-Narrow-Web-Regular">PT_Sans-Narrow-Web-Regular</option>
+<option value="RussoOne-Regular">RussoOne-Regular</option>
+<option value="Ubuntu-M">Ubuntu-M</option>
+</optgroup>
+<optgroup label="Latin">
+<option value="Coiny-Regular">Coiny-Regular</option>
+<option value="ComicNeue-Regular">ComicNeue-Regular</option>
+<option value="ComicNeue-Bold">ComicNeue-Bold</option>
+<option value="Shrikhand-Regular">Shrikhand-Regular</option>
+</optgroup>
+<optgroup label="Arabic">
+<option value="Amiri-Regular">Amiri-Regular</option>
+<option value="Amiri-Bold">Amiri-Bold</option>
+<option value="Amiri-BoldSlanted">Amiri-BoldSlanted</option>
+<option value="Amiri-Slanted">Amiri-Slanted</option>
+</optgroup>
+<optgroup label="Hebrew">
+<option value="Arimo-Regular">Arimo-Regular</option>
+<option value="Arimo-Bold">Arimo-Bold</option>
+<option value="Arimo-BoldItalic">Arimo-BoldItalic</option>
+<option value="Arimo-Italic">Arimo-Italic</option>
+</optgroup>
+<optgroup label="Thai">
+<option value="Kanit-Regular">Kanit-Regular</option>
+<option value="Kanit-Bold">Kanit-Bold</option>
+<option value="Kanit-BoldItalic">Kanit-BoldItalic</option>
+</optgroup>
+<optgroup label="Tamil">
+<option value="Catamaran-Regular">Catamaran-Regular</option>
+<option value="Catamaran-Bold">Catamaran-Bold</option>
+</optgroup>
+<optgroup label="Telugu">
+<option value="Mallanna-Regular">Mallanna-Regular</option>
+<option value="Mandali-Regular">Mandali-Regular</option>
+<option value="Timmana-Regular">Timmana-Regular</option>
+</optgroup>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Align:</label>
+<select class="f-align" name="f5[align]">
+<option value="center">Center</option>
+<option value="left">Left</option>
+<option value="right">Right</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Border:</label>
+<select class="f-border" name="f5[border]">
+<option value="none">None</option>
+<option value="1" selected="selected">Light</option>
+<option value="2">Medium</option>
+<option value="3">Strong</option>
+<option value="4">Very strong</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Color:</label>
+<select class="f-color" name="f5[color]">
+<option value="White">White</option>
+<option value="Black">Black</option>
+<option value="Yellow">Yellow</option>
+<option value="Red">Red</option>
+<option value="OrangeRed">OrangeRed</option>
+<option value="Orange">Orange</option>
+<option value="Green">Green</option>
+<option value="Blue">Blue</option>
+<option value="VioletRed1">VioletRed1</option>
+<option value="DeepPink">DeepPink</option>
+<option value="orchid">orchid</option>
+<option value="LimeGreen">LimeGreen</option>
+<option value="gold">gold</option>
+<option value="LightGray">LightGray</option>
+<option value="silver">silver</option>
+<option value="DarkGray">DarkGray</option>
+</select>
+</div>
+
+
+<button class="button primary add-frame-text">Set</button>
+</div>
+
+</div>
+</div>
+<div class="f" id="frame-6">
+<div class="i" style="width:210px;height:224px;background:transparent url('//im.ezgif.com/tmp/f9a72553ef-gif-im/frame_5_delay-0.07s.gif') no-repeat 50% 50%"></div>
+<div class="opt" style="margin-left:210px">
+<span class="frameno">#6</span>
+
+<div class="add-form">
+<input type="hidden" value="6" class="f-num" name="f6[frame]">
+<input type="hidden" value="0" class="f-left" name="f6[left]">
+<input type="hidden" value="0" class="f-top" name="f6[top]">
+<input type="hidden" value="0" class="f-dragged" name="f6[dragged]">
+<input type="hidden" value="" class="f-file" name="f6[file]">
+<textarea name="f6[text]" class="f-text" rows="2" cols="10"></textarea>
+
+<div class="txt-opt">
+<label>Font size:</label>
+<input type="text" name="f6[size]" value="32" class="text f-size">
+</div>
+
+<div class="txt-opt">
+<label>Frames:</label>6 - 
+<input type="text" name="f6[to]" value="end" class="text f-to">
+</div>
+
+<div class="txt-opt">
+<label>Font:</label>
+<select class="f-font" name="f6[font]">
+<optgroup label="Latin extended + cyrillic">
+<option value="Impact">Impact</option>
+<option value="DidactGothic">DidactGothic</option>
+<option value="EBGaramond-Regular">EBGaramond-Regular</option>
+<option value="foo">Foo</option>
+<option value="RuslanDisplay">RuslanDisplay</option>
+<option value="Jura-Regular">Jura-Regular</option>
+<option value="Jura-Light">Jura-Light</option>
+<option value="Jura-DemiBold">Jura-DemiBold</option>
+<option value="Lobster-Regular">Lobster-Regular</option>
+<option value="MarckScript-Regular">MarckScript-Regular</option>
+<option value="OpenSans-BoldItalic">OpenSans-BoldItalic</option>
+<option value="OpenSans-Regular">OpenSans-Regular</option>
+<option value="OpenSans-Bold">OpenSans-Bold</option>
+<option value="OpenSans-Italic">OpenSans-Italic</option>
+<option value="PoiretOne-Regular">PoiretOne-Regular</option>
+<option value="PT_Sans-Narrow-Web-Bold">PT_Sans-Narrow-Web-Bold</option>
+<option value="PT_Sans-Narrow-Web-Regular">PT_Sans-Narrow-Web-Regular</option>
+<option value="RussoOne-Regular">RussoOne-Regular</option>
+<option value="Ubuntu-M">Ubuntu-M</option>
+</optgroup>
+<optgroup label="Latin">
+<option value="Coiny-Regular">Coiny-Regular</option>
+<option value="ComicNeue-Regular">ComicNeue-Regular</option>
+<option value="ComicNeue-Bold">ComicNeue-Bold</option>
+<option value="Shrikhand-Regular">Shrikhand-Regular</option>
+</optgroup>
+<optgroup label="Arabic">
+<option value="Amiri-Regular">Amiri-Regular</option>
+<option value="Amiri-Bold">Amiri-Bold</option>
+<option value="Amiri-BoldSlanted">Amiri-BoldSlanted</option>
+<option value="Amiri-Slanted">Amiri-Slanted</option>
+</optgroup>
+<optgroup label="Hebrew">
+<option value="Arimo-Regular">Arimo-Regular</option>
+<option value="Arimo-Bold">Arimo-Bold</option>
+<option value="Arimo-BoldItalic">Arimo-BoldItalic</option>
+<option value="Arimo-Italic">Arimo-Italic</option>
+</optgroup>
+<optgroup label="Thai">
+<option value="Kanit-Regular">Kanit-Regular</option>
+<option value="Kanit-Bold">Kanit-Bold</option>
+<option value="Kanit-BoldItalic">Kanit-BoldItalic</option>
+</optgroup>
+<optgroup label="Tamil">
+<option value="Catamaran-Regular">Catamaran-Regular</option>
+<option value="Catamaran-Bold">Catamaran-Bold</option>
+</optgroup>
+<optgroup label="Telugu">
+<option value="Mallanna-Regular">Mallanna-Regular</option>
+<option value="Mandali-Regular">Mandali-Regular</option>
+<option value="Timmana-Regular">Timmana-Regular</option>
+</optgroup>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Align:</label>
+<select class="f-align" name="f6[align]">
+<option value="center">Center</option>
+<option value="left">Left</option>
+<option value="right">Right</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Border:</label>
+<select class="f-border" name="f6[border]">
+<option value="none">None</option>
+<option value="1" selected="selected">Light</option>
+<option value="2">Medium</option>
+<option value="3">Strong</option>
+<option value="4">Very strong</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Color:</label>
+<select class="f-color" name="f6[color]">
+<option value="White">White</option>
+<option value="Black">Black</option>
+<option value="Yellow">Yellow</option>
+<option value="Red">Red</option>
+<option value="OrangeRed">OrangeRed</option>
+<option value="Orange">Orange</option>
+<option value="Green">Green</option>
+<option value="Blue">Blue</option>
+<option value="VioletRed1">VioletRed1</option>
+<option value="DeepPink">DeepPink</option>
+<option value="orchid">orchid</option>
+<option value="LimeGreen">LimeGreen</option>
+<option value="gold">gold</option>
+<option value="LightGray">LightGray</option>
+<option value="silver">silver</option>
+<option value="DarkGray">DarkGray</option>
+</select>
+</div>
+
+
+<button class="button primary add-frame-text">Set</button>
+</div>
+
+</div>
+</div>
+<div class="f" id="frame-7">
+<div class="i" style="width:210px;height:224px;background:transparent url('//im.ezgif.com/tmp/f9a72553ef-gif-im/frame_6_delay-0.07s.gif') no-repeat 50% 50%"></div>
+<div class="opt" style="margin-left:210px">
+<span class="frameno">#7</span>
+
+<div class="add-form">
+<input type="hidden" value="7" class="f-num" name="f7[frame]">
+<input type="hidden" value="0" class="f-left" name="f7[left]">
+<input type="hidden" value="0" class="f-top" name="f7[top]">
+<input type="hidden" value="0" class="f-dragged" name="f7[dragged]">
+<input type="hidden" value="" class="f-file" name="f7[file]">
+<textarea name="f7[text]" class="f-text" rows="2" cols="10"></textarea>
+
+<div class="txt-opt">
+<label>Font size:</label>
+<input type="text" name="f7[size]" value="32" class="text f-size">
+</div>
+
+<div class="txt-opt">
+<label>Frames:</label>7 - 
+<input type="text" name="f7[to]" value="end" class="text f-to">
+</div>
+
+<div class="txt-opt">
+<label>Font:</label>
+<select class="f-font" name="f7[font]">
+<optgroup label="Latin extended + cyrillic">
+<option value="Impact">Impact</option>
+<option value="DidactGothic">DidactGothic</option>
+<option value="EBGaramond-Regular">EBGaramond-Regular</option>
+<option value="foo">Foo</option>
+<option value="RuslanDisplay">RuslanDisplay</option>
+<option value="Jura-Regular">Jura-Regular</option>
+<option value="Jura-Light">Jura-Light</option>
+<option value="Jura-DemiBold">Jura-DemiBold</option>
+<option value="Lobster-Regular">Lobster-Regular</option>
+<option value="MarckScript-Regular">MarckScript-Regular</option>
+<option value="OpenSans-BoldItalic">OpenSans-BoldItalic</option>
+<option value="OpenSans-Regular">OpenSans-Regular</option>
+<option value="OpenSans-Bold">OpenSans-Bold</option>
+<option value="OpenSans-Italic">OpenSans-Italic</option>
+<option value="PoiretOne-Regular">PoiretOne-Regular</option>
+<option value="PT_Sans-Narrow-Web-Bold">PT_Sans-Narrow-Web-Bold</option>
+<option value="PT_Sans-Narrow-Web-Regular">PT_Sans-Narrow-Web-Regular</option>
+<option value="RussoOne-Regular">RussoOne-Regular</option>
+<option value="Ubuntu-M">Ubuntu-M</option>
+</optgroup>
+<optgroup label="Latin">
+<option value="Coiny-Regular">Coiny-Regular</option>
+<option value="ComicNeue-Regular">ComicNeue-Regular</option>
+<option value="ComicNeue-Bold">ComicNeue-Bold</option>
+<option value="Shrikhand-Regular">Shrikhand-Regular</option>
+</optgroup>
+<optgroup label="Arabic">
+<option value="Amiri-Regular">Amiri-Regular</option>
+<option value="Amiri-Bold">Amiri-Bold</option>
+<option value="Amiri-BoldSlanted">Amiri-BoldSlanted</option>
+<option value="Amiri-Slanted">Amiri-Slanted</option>
+</optgroup>
+<optgroup label="Hebrew">
+<option value="Arimo-Regular">Arimo-Regular</option>
+<option value="Arimo-Bold">Arimo-Bold</option>
+<option value="Arimo-BoldItalic">Arimo-BoldItalic</option>
+<option value="Arimo-Italic">Arimo-Italic</option>
+</optgroup>
+<optgroup label="Thai">
+<option value="Kanit-Regular">Kanit-Regular</option>
+<option value="Kanit-Bold">Kanit-Bold</option>
+<option value="Kanit-BoldItalic">Kanit-BoldItalic</option>
+</optgroup>
+<optgroup label="Tamil">
+<option value="Catamaran-Regular">Catamaran-Regular</option>
+<option value="Catamaran-Bold">Catamaran-Bold</option>
+</optgroup>
+<optgroup label="Telugu">
+<option value="Mallanna-Regular">Mallanna-Regular</option>
+<option value="Mandali-Regular">Mandali-Regular</option>
+<option value="Timmana-Regular">Timmana-Regular</option>
+</optgroup>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Align:</label>
+<select class="f-align" name="f7[align]">
+<option value="center">Center</option>
+<option value="left">Left</option>
+<option value="right">Right</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Border:</label>
+<select class="f-border" name="f7[border]">
+<option value="none">None</option>
+<option value="1" selected="selected">Light</option>
+<option value="2">Medium</option>
+<option value="3">Strong</option>
+<option value="4">Very strong</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Color:</label>
+<select class="f-color" name="f7[color]">
+<option value="White">White</option>
+<option value="Black">Black</option>
+<option value="Yellow">Yellow</option>
+<option value="Red">Red</option>
+<option value="OrangeRed">OrangeRed</option>
+<option value="Orange">Orange</option>
+<option value="Green">Green</option>
+<option value="Blue">Blue</option>
+<option value="VioletRed1">VioletRed1</option>
+<option value="DeepPink">DeepPink</option>
+<option value="orchid">orchid</option>
+<option value="LimeGreen">LimeGreen</option>
+<option value="gold">gold</option>
+<option value="LightGray">LightGray</option>
+<option value="silver">silver</option>
+<option value="DarkGray">DarkGray</option>
+</select>
+</div>
+
+
+<button class="button primary add-frame-text">Set</button>
+</div>
+
+</div>
+</div>
+<div class="f" id="frame-8">
+<div class="i" style="width:210px;height:224px;background:transparent url('//im.ezgif.com/tmp/f9a72553ef-gif-im/frame_7_delay-0.07s.gif') no-repeat 50% 50%"></div>
+<div class="opt" style="margin-left:210px">
+<span class="frameno">#8</span>
+
+<div class="add-form">
+<input type="hidden" value="8" class="f-num" name="f8[frame]">
+<input type="hidden" value="0" class="f-left" name="f8[left]">
+<input type="hidden" value="0" class="f-top" name="f8[top]">
+<input type="hidden" value="0" class="f-dragged" name="f8[dragged]">
+<input type="hidden" value="" class="f-file" name="f8[file]">
+<textarea name="f8[text]" class="f-text" rows="2" cols="10"></textarea>
+
+<div class="txt-opt">
+<label>Font size:</label>
+<input type="text" name="f8[size]" value="32" class="text f-size">
+</div>
+
+<div class="txt-opt">
+<label>Frames:</label>8 - 
+<input type="text" name="f8[to]" value="end" class="text f-to">
+</div>
+
+<div class="txt-opt">
+<label>Font:</label>
+<select class="f-font" name="f8[font]">
+<optgroup label="Latin extended + cyrillic">
+<option value="Impact">Impact</option>
+<option value="DidactGothic">DidactGothic</option>
+<option value="EBGaramond-Regular">EBGaramond-Regular</option>
+<option value="foo">Foo</option>
+<option value="RuslanDisplay">RuslanDisplay</option>
+<option value="Jura-Regular">Jura-Regular</option>
+<option value="Jura-Light">Jura-Light</option>
+<option value="Jura-DemiBold">Jura-DemiBold</option>
+<option value="Lobster-Regular">Lobster-Regular</option>
+<option value="MarckScript-Regular">MarckScript-Regular</option>
+<option value="OpenSans-BoldItalic">OpenSans-BoldItalic</option>
+<option value="OpenSans-Regular">OpenSans-Regular</option>
+<option value="OpenSans-Bold">OpenSans-Bold</option>
+<option value="OpenSans-Italic">OpenSans-Italic</option>
+<option value="PoiretOne-Regular">PoiretOne-Regular</option>
+<option value="PT_Sans-Narrow-Web-Bold">PT_Sans-Narrow-Web-Bold</option>
+<option value="PT_Sans-Narrow-Web-Regular">PT_Sans-Narrow-Web-Regular</option>
+<option value="RussoOne-Regular">RussoOne-Regular</option>
+<option value="Ubuntu-M">Ubuntu-M</option>
+</optgroup>
+<optgroup label="Latin">
+<option value="Coiny-Regular">Coiny-Regular</option>
+<option value="ComicNeue-Regular">ComicNeue-Regular</option>
+<option value="ComicNeue-Bold">ComicNeue-Bold</option>
+<option value="Shrikhand-Regular">Shrikhand-Regular</option>
+</optgroup>
+<optgroup label="Arabic">
+<option value="Amiri-Regular">Amiri-Regular</option>
+<option value="Amiri-Bold">Amiri-Bold</option>
+<option value="Amiri-BoldSlanted">Amiri-BoldSlanted</option>
+<option value="Amiri-Slanted">Amiri-Slanted</option>
+</optgroup>
+<optgroup label="Hebrew">
+<option value="Arimo-Regular">Arimo-Regular</option>
+<option value="Arimo-Bold">Arimo-Bold</option>
+<option value="Arimo-BoldItalic">Arimo-BoldItalic</option>
+<option value="Arimo-Italic">Arimo-Italic</option>
+</optgroup>
+<optgroup label="Thai">
+<option value="Kanit-Regular">Kanit-Regular</option>
+<option value="Kanit-Bold">Kanit-Bold</option>
+<option value="Kanit-BoldItalic">Kanit-BoldItalic</option>
+</optgroup>
+<optgroup label="Tamil">
+<option value="Catamaran-Regular">Catamaran-Regular</option>
+<option value="Catamaran-Bold">Catamaran-Bold</option>
+</optgroup>
+<optgroup label="Telugu">
+<option value="Mallanna-Regular">Mallanna-Regular</option>
+<option value="Mandali-Regular">Mandali-Regular</option>
+<option value="Timmana-Regular">Timmana-Regular</option>
+</optgroup>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Align:</label>
+<select class="f-align" name="f8[align]">
+<option value="center">Center</option>
+<option value="left">Left</option>
+<option value="right">Right</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Border:</label>
+<select class="f-border" name="f8[border]">
+<option value="none">None</option>
+<option value="1" selected="selected">Light</option>
+<option value="2">Medium</option>
+<option value="3">Strong</option>
+<option value="4">Very strong</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Color:</label>
+<select class="f-color" name="f8[color]">
+<option value="White">White</option>
+<option value="Black">Black</option>
+<option value="Yellow">Yellow</option>
+<option value="Red">Red</option>
+<option value="OrangeRed">OrangeRed</option>
+<option value="Orange">Orange</option>
+<option value="Green">Green</option>
+<option value="Blue">Blue</option>
+<option value="VioletRed1">VioletRed1</option>
+<option value="DeepPink">DeepPink</option>
+<option value="orchid">orchid</option>
+<option value="LimeGreen">LimeGreen</option>
+<option value="gold">gold</option>
+<option value="LightGray">LightGray</option>
+<option value="silver">silver</option>
+<option value="DarkGray">DarkGray</option>
+</select>
+</div>
+
+
+<button class="button primary add-frame-text">Set</button>
+</div>
+
+</div>
+</div>
+<div class="f" id="frame-9">
+<div class="i" style="width:210px;height:224px;background:transparent url('//im.ezgif.com/tmp/f9a72553ef-gif-im/frame_8_delay-0.07s.gif') no-repeat 50% 50%"></div>
+<div class="opt" style="margin-left:210px">
+<span class="frameno">#9</span>
+
+<div class="add-form">
+<input type="hidden" value="9" class="f-num" name="f9[frame]">
+<input type="hidden" value="0" class="f-left" name="f9[left]">
+<input type="hidden" value="0" class="f-top" name="f9[top]">
+<input type="hidden" value="0" class="f-dragged" name="f9[dragged]">
+<input type="hidden" value="" class="f-file" name="f9[file]">
+<textarea name="f9[text]" class="f-text" rows="2" cols="10"></textarea>
+
+<div class="txt-opt">
+<label>Font size:</label>
+<input type="text" name="f9[size]" value="32" class="text f-size">
+</div>
+
+<div class="txt-opt">
+<label>Frames:</label>9 - 
+<input type="text" name="f9[to]" value="end" class="text f-to">
+</div>
+
+<div class="txt-opt">
+<label>Font:</label>
+<select class="f-font" name="f9[font]">
+<optgroup label="Latin extended + cyrillic">
+<option value="Impact">Impact</option>
+<option value="DidactGothic">DidactGothic</option>
+<option value="EBGaramond-Regular">EBGaramond-Regular</option>
+<option value="foo">Foo</option>
+<option value="RuslanDisplay">RuslanDisplay</option>
+<option value="Jura-Regular">Jura-Regular</option>
+<option value="Jura-Light">Jura-Light</option>
+<option value="Jura-DemiBold">Jura-DemiBold</option>
+<option value="Lobster-Regular">Lobster-Regular</option>
+<option value="MarckScript-Regular">MarckScript-Regular</option>
+<option value="OpenSans-BoldItalic">OpenSans-BoldItalic</option>
+<option value="OpenSans-Regular">OpenSans-Regular</option>
+<option value="OpenSans-Bold">OpenSans-Bold</option>
+<option value="OpenSans-Italic">OpenSans-Italic</option>
+<option value="PoiretOne-Regular">PoiretOne-Regular</option>
+<option value="PT_Sans-Narrow-Web-Bold">PT_Sans-Narrow-Web-Bold</option>
+<option value="PT_Sans-Narrow-Web-Regular">PT_Sans-Narrow-Web-Regular</option>
+<option value="RussoOne-Regular">RussoOne-Regular</option>
+<option value="Ubuntu-M">Ubuntu-M</option>
+</optgroup>
+<optgroup label="Latin">
+<option value="Coiny-Regular">Coiny-Regular</option>
+<option value="ComicNeue-Regular">ComicNeue-Regular</option>
+<option value="ComicNeue-Bold">ComicNeue-Bold</option>
+<option value="Shrikhand-Regular">Shrikhand-Regular</option>
+</optgroup>
+<optgroup label="Arabic">
+<option value="Amiri-Regular">Amiri-Regular</option>
+<option value="Amiri-Bold">Amiri-Bold</option>
+<option value="Amiri-BoldSlanted">Amiri-BoldSlanted</option>
+<option value="Amiri-Slanted">Amiri-Slanted</option>
+</optgroup>
+<optgroup label="Hebrew">
+<option value="Arimo-Regular">Arimo-Regular</option>
+<option value="Arimo-Bold">Arimo-Bold</option>
+<option value="Arimo-BoldItalic">Arimo-BoldItalic</option>
+<option value="Arimo-Italic">Arimo-Italic</option>
+</optgroup>
+<optgroup label="Thai">
+<option value="Kanit-Regular">Kanit-Regular</option>
+<option value="Kanit-Bold">Kanit-Bold</option>
+<option value="Kanit-BoldItalic">Kanit-BoldItalic</option>
+</optgroup>
+<optgroup label="Tamil">
+<option value="Catamaran-Regular">Catamaran-Regular</option>
+<option value="Catamaran-Bold">Catamaran-Bold</option>
+</optgroup>
+<optgroup label="Telugu">
+<option value="Mallanna-Regular">Mallanna-Regular</option>
+<option value="Mandali-Regular">Mandali-Regular</option>
+<option value="Timmana-Regular">Timmana-Regular</option>
+</optgroup>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Align:</label>
+<select class="f-align" name="f9[align]">
+<option value="center">Center</option>
+<option value="left">Left</option>
+<option value="right">Right</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Border:</label>
+<select class="f-border" name="f9[border]">
+<option value="none">None</option>
+<option value="1" selected="selected">Light</option>
+<option value="2">Medium</option>
+<option value="3">Strong</option>
+<option value="4">Very strong</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Color:</label>
+<select class="f-color" name="f9[color]">
+<option value="White">White</option>
+<option value="Black">Black</option>
+<option value="Yellow">Yellow</option>
+<option value="Red">Red</option>
+<option value="OrangeRed">OrangeRed</option>
+<option value="Orange">Orange</option>
+<option value="Green">Green</option>
+<option value="Blue">Blue</option>
+<option value="VioletRed1">VioletRed1</option>
+<option value="DeepPink">DeepPink</option>
+<option value="orchid">orchid</option>
+<option value="LimeGreen">LimeGreen</option>
+<option value="gold">gold</option>
+<option value="LightGray">LightGray</option>
+<option value="silver">silver</option>
+<option value="DarkGray">DarkGray</option>
+</select>
+</div>
+
+
+<button class="button primary add-frame-text">Set</button>
+</div>
+
+</div>
+</div>
+<div class="f" id="frame-10">
+<div class="i" style="width:210px;height:224px;background:transparent url('//im.ezgif.com/tmp/f9a72553ef-gif-im/frame_9_delay-0.07s.gif') no-repeat 50% 50%"></div>
+<div class="opt" style="margin-left:210px">
+<span class="frameno">#10</span>
+
+<div class="add-form">
+<input type="hidden" value="10" class="f-num" name="f10[frame]">
+<input type="hidden" value="0" class="f-left" name="f10[left]">
+<input type="hidden" value="0" class="f-top" name="f10[top]">
+<input type="hidden" value="0" class="f-dragged" name="f10[dragged]">
+<input type="hidden" value="" class="f-file" name="f10[file]">
+<textarea name="f10[text]" class="f-text" rows="2" cols="10"></textarea>
+
+<div class="txt-opt">
+<label>Font size:</label>
+<input type="text" name="f10[size]" value="32" class="text f-size">
+</div>
+
+<div class="txt-opt">
+<label>Frames:</label>10 - 
+<input type="text" name="f10[to]" value="end" class="text f-to">
+</div>
+
+<div class="txt-opt">
+<label>Font:</label>
+<select class="f-font" name="f10[font]">
+<optgroup label="Latin extended + cyrillic">
+<option value="Impact">Impact</option>
+<option value="DidactGothic">DidactGothic</option>
+<option value="EBGaramond-Regular">EBGaramond-Regular</option>
+<option value="foo">Foo</option>
+<option value="RuslanDisplay">RuslanDisplay</option>
+<option value="Jura-Regular">Jura-Regular</option>
+<option value="Jura-Light">Jura-Light</option>
+<option value="Jura-DemiBold">Jura-DemiBold</option>
+<option value="Lobster-Regular">Lobster-Regular</option>
+<option value="MarckScript-Regular">MarckScript-Regular</option>
+<option value="OpenSans-BoldItalic">OpenSans-BoldItalic</option>
+<option value="OpenSans-Regular">OpenSans-Regular</option>
+<option value="OpenSans-Bold">OpenSans-Bold</option>
+<option value="OpenSans-Italic">OpenSans-Italic</option>
+<option value="PoiretOne-Regular">PoiretOne-Regular</option>
+<option value="PT_Sans-Narrow-Web-Bold">PT_Sans-Narrow-Web-Bold</option>
+<option value="PT_Sans-Narrow-Web-Regular">PT_Sans-Narrow-Web-Regular</option>
+<option value="RussoOne-Regular">RussoOne-Regular</option>
+<option value="Ubuntu-M">Ubuntu-M</option>
+</optgroup>
+<optgroup label="Latin">
+<option value="Coiny-Regular">Coiny-Regular</option>
+<option value="ComicNeue-Regular">ComicNeue-Regular</option>
+<option value="ComicNeue-Bold">ComicNeue-Bold</option>
+<option value="Shrikhand-Regular">Shrikhand-Regular</option>
+</optgroup>
+<optgroup label="Arabic">
+<option value="Amiri-Regular">Amiri-Regular</option>
+<option value="Amiri-Bold">Amiri-Bold</option>
+<option value="Amiri-BoldSlanted">Amiri-BoldSlanted</option>
+<option value="Amiri-Slanted">Amiri-Slanted</option>
+</optgroup>
+<optgroup label="Hebrew">
+<option value="Arimo-Regular">Arimo-Regular</option>
+<option value="Arimo-Bold">Arimo-Bold</option>
+<option value="Arimo-BoldItalic">Arimo-BoldItalic</option>
+<option value="Arimo-Italic">Arimo-Italic</option>
+</optgroup>
+<optgroup label="Thai">
+<option value="Kanit-Regular">Kanit-Regular</option>
+<option value="Kanit-Bold">Kanit-Bold</option>
+<option value="Kanit-BoldItalic">Kanit-BoldItalic</option>
+</optgroup>
+<optgroup label="Tamil">
+<option value="Catamaran-Regular">Catamaran-Regular</option>
+<option value="Catamaran-Bold">Catamaran-Bold</option>
+</optgroup>
+<optgroup label="Telugu">
+<option value="Mallanna-Regular">Mallanna-Regular</option>
+<option value="Mandali-Regular">Mandali-Regular</option>
+<option value="Timmana-Regular">Timmana-Regular</option>
+</optgroup>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Align:</label>
+<select class="f-align" name="f10[align]">
+<option value="center">Center</option>
+<option value="left">Left</option>
+<option value="right">Right</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Border:</label>
+<select class="f-border" name="f10[border]">
+<option value="none">None</option>
+<option value="1" selected="selected">Light</option>
+<option value="2">Medium</option>
+<option value="3">Strong</option>
+<option value="4">Very strong</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Color:</label>
+<select class="f-color" name="f10[color]">
+<option value="White">White</option>
+<option value="Black">Black</option>
+<option value="Yellow">Yellow</option>
+<option value="Red">Red</option>
+<option value="OrangeRed">OrangeRed</option>
+<option value="Orange">Orange</option>
+<option value="Green">Green</option>
+<option value="Blue">Blue</option>
+<option value="VioletRed1">VioletRed1</option>
+<option value="DeepPink">DeepPink</option>
+<option value="orchid">orchid</option>
+<option value="LimeGreen">LimeGreen</option>
+<option value="gold">gold</option>
+<option value="LightGray">LightGray</option>
+<option value="silver">silver</option>
+<option value="DarkGray">DarkGray</option>
+</select>
+</div>
+
+
+<button class="button primary add-frame-text">Set</button>
+</div>
+
+</div>
+</div>
+<div class="f" id="frame-11">
+<div class="i" style="width:210px;height:224px;background:transparent url('//im.ezgif.com/tmp/f9a72553ef-gif-im/frame_10_delay-0.07s.gif') no-repeat 50% 50%"></div>
+<div class="opt" style="margin-left:210px">
+<span class="frameno">#11</span>
+
+<div class="add-form">
+<input type="hidden" value="11" class="f-num" name="f11[frame]">
+<input type="hidden" value="0" class="f-left" name="f11[left]">
+<input type="hidden" value="0" class="f-top" name="f11[top]">
+<input type="hidden" value="0" class="f-dragged" name="f11[dragged]">
+<input type="hidden" value="" class="f-file" name="f11[file]">
+<textarea name="f11[text]" class="f-text" rows="2" cols="10"></textarea>
+
+<div class="txt-opt">
+<label>Font size:</label>
+<input type="text" name="f11[size]" value="32" class="text f-size">
+</div>
+
+<div class="txt-opt">
+<label>Frames:</label>11 - 
+<input type="text" name="f11[to]" value="end" class="text f-to">
+</div>
+
+<div class="txt-opt">
+<label>Font:</label>
+<select class="f-font" name="f11[font]">
+<optgroup label="Latin extended + cyrillic">
+<option value="Impact">Impact</option>
+<option value="DidactGothic">DidactGothic</option>
+<option value="EBGaramond-Regular">EBGaramond-Regular</option>
+<option value="foo">Foo</option>
+<option value="RuslanDisplay">RuslanDisplay</option>
+<option value="Jura-Regular">Jura-Regular</option>
+<option value="Jura-Light">Jura-Light</option>
+<option value="Jura-DemiBold">Jura-DemiBold</option>
+<option value="Lobster-Regular">Lobster-Regular</option>
+<option value="MarckScript-Regular">MarckScript-Regular</option>
+<option value="OpenSans-BoldItalic">OpenSans-BoldItalic</option>
+<option value="OpenSans-Regular">OpenSans-Regular</option>
+<option value="OpenSans-Bold">OpenSans-Bold</option>
+<option value="OpenSans-Italic">OpenSans-Italic</option>
+<option value="PoiretOne-Regular">PoiretOne-Regular</option>
+<option value="PT_Sans-Narrow-Web-Bold">PT_Sans-Narrow-Web-Bold</option>
+<option value="PT_Sans-Narrow-Web-Regular">PT_Sans-Narrow-Web-Regular</option>
+<option value="RussoOne-Regular">RussoOne-Regular</option>
+<option value="Ubuntu-M">Ubuntu-M</option>
+</optgroup>
+<optgroup label="Latin">
+<option value="Coiny-Regular">Coiny-Regular</option>
+<option value="ComicNeue-Regular">ComicNeue-Regular</option>
+<option value="ComicNeue-Bold">ComicNeue-Bold</option>
+<option value="Shrikhand-Regular">Shrikhand-Regular</option>
+</optgroup>
+<optgroup label="Arabic">
+<option value="Amiri-Regular">Amiri-Regular</option>
+<option value="Amiri-Bold">Amiri-Bold</option>
+<option value="Amiri-BoldSlanted">Amiri-BoldSlanted</option>
+<option value="Amiri-Slanted">Amiri-Slanted</option>
+</optgroup>
+<optgroup label="Hebrew">
+<option value="Arimo-Regular">Arimo-Regular</option>
+<option value="Arimo-Bold">Arimo-Bold</option>
+<option value="Arimo-BoldItalic">Arimo-BoldItalic</option>
+<option value="Arimo-Italic">Arimo-Italic</option>
+</optgroup>
+<optgroup label="Thai">
+<option value="Kanit-Regular">Kanit-Regular</option>
+<option value="Kanit-Bold">Kanit-Bold</option>
+<option value="Kanit-BoldItalic">Kanit-BoldItalic</option>
+</optgroup>
+<optgroup label="Tamil">
+<option value="Catamaran-Regular">Catamaran-Regular</option>
+<option value="Catamaran-Bold">Catamaran-Bold</option>
+</optgroup>
+<optgroup label="Telugu">
+<option value="Mallanna-Regular">Mallanna-Regular</option>
+<option value="Mandali-Regular">Mandali-Regular</option>
+<option value="Timmana-Regular">Timmana-Regular</option>
+</optgroup>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Align:</label>
+<select class="f-align" name="f11[align]">
+<option value="center">Center</option>
+<option value="left">Left</option>
+<option value="right">Right</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Border:</label>
+<select class="f-border" name="f11[border]">
+<option value="none">None</option>
+<option value="1" selected="selected">Light</option>
+<option value="2">Medium</option>
+<option value="3">Strong</option>
+<option value="4">Very strong</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Color:</label>
+<select class="f-color" name="f11[color]">
+<option value="White">White</option>
+<option value="Black">Black</option>
+<option value="Yellow">Yellow</option>
+<option value="Red">Red</option>
+<option value="OrangeRed">OrangeRed</option>
+<option value="Orange">Orange</option>
+<option value="Green">Green</option>
+<option value="Blue">Blue</option>
+<option value="VioletRed1">VioletRed1</option>
+<option value="DeepPink">DeepPink</option>
+<option value="orchid">orchid</option>
+<option value="LimeGreen">LimeGreen</option>
+<option value="gold">gold</option>
+<option value="LightGray">LightGray</option>
+<option value="silver">silver</option>
+<option value="DarkGray">DarkGray</option>
+</select>
+</div>
+
+
+<button class="button primary add-frame-text">Set</button>
+</div>
+
+</div>
+</div>
+<div class="f" id="frame-12">
+<div class="i" style="width:210px;height:224px;background:transparent url('//im.ezgif.com/tmp/f9a72553ef-gif-im/frame_11_delay-0.07s.gif') no-repeat 50% 50%"></div>
+<div class="opt" style="margin-left:210px">
+<span class="frameno">#12</span>
+
+<div class="add-form">
+<input type="hidden" value="12" class="f-num" name="f12[frame]">
+<input type="hidden" value="0" class="f-left" name="f12[left]">
+<input type="hidden" value="0" class="f-top" name="f12[top]">
+<input type="hidden" value="0" class="f-dragged" name="f12[dragged]">
+<input type="hidden" value="" class="f-file" name="f12[file]">
+<textarea name="f12[text]" class="f-text" rows="2" cols="10"></textarea>
+
+<div class="txt-opt">
+<label>Font size:</label>
+<input type="text" name="f12[size]" value="32" class="text f-size">
+</div>
+
+<div class="txt-opt">
+<label>Frames:</label>12 - 
+<input type="text" name="f12[to]" value="end" class="text f-to">
+</div>
+
+<div class="txt-opt">
+<label>Font:</label>
+<select class="f-font" name="f12[font]">
+<optgroup label="Latin extended + cyrillic">
+<option value="Impact">Impact</option>
+<option value="DidactGothic">DidactGothic</option>
+<option value="EBGaramond-Regular">EBGaramond-Regular</option>
+<option value="foo">Foo</option>
+<option value="RuslanDisplay">RuslanDisplay</option>
+<option value="Jura-Regular">Jura-Regular</option>
+<option value="Jura-Light">Jura-Light</option>
+<option value="Jura-DemiBold">Jura-DemiBold</option>
+<option value="Lobster-Regular">Lobster-Regular</option>
+<option value="MarckScript-Regular">MarckScript-Regular</option>
+<option value="OpenSans-BoldItalic">OpenSans-BoldItalic</option>
+<option value="OpenSans-Regular">OpenSans-Regular</option>
+<option value="OpenSans-Bold">OpenSans-Bold</option>
+<option value="OpenSans-Italic">OpenSans-Italic</option>
+<option value="PoiretOne-Regular">PoiretOne-Regular</option>
+<option value="PT_Sans-Narrow-Web-Bold">PT_Sans-Narrow-Web-Bold</option>
+<option value="PT_Sans-Narrow-Web-Regular">PT_Sans-Narrow-Web-Regular</option>
+<option value="RussoOne-Regular">RussoOne-Regular</option>
+<option value="Ubuntu-M">Ubuntu-M</option>
+</optgroup>
+<optgroup label="Latin">
+<option value="Coiny-Regular">Coiny-Regular</option>
+<option value="ComicNeue-Regular">ComicNeue-Regular</option>
+<option value="ComicNeue-Bold">ComicNeue-Bold</option>
+<option value="Shrikhand-Regular">Shrikhand-Regular</option>
+</optgroup>
+<optgroup label="Arabic">
+<option value="Amiri-Regular">Amiri-Regular</option>
+<option value="Amiri-Bold">Amiri-Bold</option>
+<option value="Amiri-BoldSlanted">Amiri-BoldSlanted</option>
+<option value="Amiri-Slanted">Amiri-Slanted</option>
+</optgroup>
+<optgroup label="Hebrew">
+<option value="Arimo-Regular">Arimo-Regular</option>
+<option value="Arimo-Bold">Arimo-Bold</option>
+<option value="Arimo-BoldItalic">Arimo-BoldItalic</option>
+<option value="Arimo-Italic">Arimo-Italic</option>
+</optgroup>
+<optgroup label="Thai">
+<option value="Kanit-Regular">Kanit-Regular</option>
+<option value="Kanit-Bold">Kanit-Bold</option>
+<option value="Kanit-BoldItalic">Kanit-BoldItalic</option>
+</optgroup>
+<optgroup label="Tamil">
+<option value="Catamaran-Regular">Catamaran-Regular</option>
+<option value="Catamaran-Bold">Catamaran-Bold</option>
+</optgroup>
+<optgroup label="Telugu">
+<option value="Mallanna-Regular">Mallanna-Regular</option>
+<option value="Mandali-Regular">Mandali-Regular</option>
+<option value="Timmana-Regular">Timmana-Regular</option>
+</optgroup>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Align:</label>
+<select class="f-align" name="f12[align]">
+<option value="center">Center</option>
+<option value="left">Left</option>
+<option value="right">Right</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Border:</label>
+<select class="f-border" name="f12[border]">
+<option value="none">None</option>
+<option value="1" selected="selected">Light</option>
+<option value="2">Medium</option>
+<option value="3">Strong</option>
+<option value="4">Very strong</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Color:</label>
+<select class="f-color" name="f12[color]">
+<option value="White">White</option>
+<option value="Black">Black</option>
+<option value="Yellow">Yellow</option>
+<option value="Red">Red</option>
+<option value="OrangeRed">OrangeRed</option>
+<option value="Orange">Orange</option>
+<option value="Green">Green</option>
+<option value="Blue">Blue</option>
+<option value="VioletRed1">VioletRed1</option>
+<option value="DeepPink">DeepPink</option>
+<option value="orchid">orchid</option>
+<option value="LimeGreen">LimeGreen</option>
+<option value="gold">gold</option>
+<option value="LightGray">LightGray</option>
+<option value="silver">silver</option>
+<option value="DarkGray">DarkGray</option>
+</select>
+</div>
+
+
+<button class="button primary add-frame-text">Set</button>
+</div>
+
+</div>
+</div>
+<div class="f" id="frame-13">
+<div class="i" style="width:210px;height:224px;background:transparent url('//im.ezgif.com/tmp/f9a72553ef-gif-im/frame_12_delay-0.07s.gif') no-repeat 50% 50%"></div>
+<div class="opt" style="margin-left:210px">
+<span class="frameno">#13</span>
+
+<div class="add-form">
+<input type="hidden" value="13" class="f-num" name="f13[frame]">
+<input type="hidden" value="0" class="f-left" name="f13[left]">
+<input type="hidden" value="0" class="f-top" name="f13[top]">
+<input type="hidden" value="0" class="f-dragged" name="f13[dragged]">
+<input type="hidden" value="" class="f-file" name="f13[file]">
+<textarea name="f13[text]" class="f-text" rows="2" cols="10"></textarea>
+
+<div class="txt-opt">
+<label>Font size:</label>
+<input type="text" name="f13[size]" value="32" class="text f-size">
+</div>
+
+<div class="txt-opt">
+<label>Frames:</label>13 - 
+<input type="text" name="f13[to]" value="end" class="text f-to">
+</div>
+
+<div class="txt-opt">
+<label>Font:</label>
+<select class="f-font" name="f13[font]">
+<optgroup label="Latin extended + cyrillic">
+<option value="Impact">Impact</option>
+<option value="DidactGothic">DidactGothic</option>
+<option value="EBGaramond-Regular">EBGaramond-Regular</option>
+<option value="foo">Foo</option>
+<option value="RuslanDisplay">RuslanDisplay</option>
+<option value="Jura-Regular">Jura-Regular</option>
+<option value="Jura-Light">Jura-Light</option>
+<option value="Jura-DemiBold">Jura-DemiBold</option>
+<option value="Lobster-Regular">Lobster-Regular</option>
+<option value="MarckScript-Regular">MarckScript-Regular</option>
+<option value="OpenSans-BoldItalic">OpenSans-BoldItalic</option>
+<option value="OpenSans-Regular">OpenSans-Regular</option>
+<option value="OpenSans-Bold">OpenSans-Bold</option>
+<option value="OpenSans-Italic">OpenSans-Italic</option>
+<option value="PoiretOne-Regular">PoiretOne-Regular</option>
+<option value="PT_Sans-Narrow-Web-Bold">PT_Sans-Narrow-Web-Bold</option>
+<option value="PT_Sans-Narrow-Web-Regular">PT_Sans-Narrow-Web-Regular</option>
+<option value="RussoOne-Regular">RussoOne-Regular</option>
+<option value="Ubuntu-M">Ubuntu-M</option>
+</optgroup>
+<optgroup label="Latin">
+<option value="Coiny-Regular">Coiny-Regular</option>
+<option value="ComicNeue-Regular">ComicNeue-Regular</option>
+<option value="ComicNeue-Bold">ComicNeue-Bold</option>
+<option value="Shrikhand-Regular">Shrikhand-Regular</option>
+</optgroup>
+<optgroup label="Arabic">
+<option value="Amiri-Regular">Amiri-Regular</option>
+<option value="Amiri-Bold">Amiri-Bold</option>
+<option value="Amiri-BoldSlanted">Amiri-BoldSlanted</option>
+<option value="Amiri-Slanted">Amiri-Slanted</option>
+</optgroup>
+<optgroup label="Hebrew">
+<option value="Arimo-Regular">Arimo-Regular</option>
+<option value="Arimo-Bold">Arimo-Bold</option>
+<option value="Arimo-BoldItalic">Arimo-BoldItalic</option>
+<option value="Arimo-Italic">Arimo-Italic</option>
+</optgroup>
+<optgroup label="Thai">
+<option value="Kanit-Regular">Kanit-Regular</option>
+<option value="Kanit-Bold">Kanit-Bold</option>
+<option value="Kanit-BoldItalic">Kanit-BoldItalic</option>
+</optgroup>
+<optgroup label="Tamil">
+<option value="Catamaran-Regular">Catamaran-Regular</option>
+<option value="Catamaran-Bold">Catamaran-Bold</option>
+</optgroup>
+<optgroup label="Telugu">
+<option value="Mallanna-Regular">Mallanna-Regular</option>
+<option value="Mandali-Regular">Mandali-Regular</option>
+<option value="Timmana-Regular">Timmana-Regular</option>
+</optgroup>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Align:</label>
+<select class="f-align" name="f13[align]">
+<option value="center">Center</option>
+<option value="left">Left</option>
+<option value="right">Right</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Border:</label>
+<select class="f-border" name="f13[border]">
+<option value="none">None</option>
+<option value="1" selected="selected">Light</option>
+<option value="2">Medium</option>
+<option value="3">Strong</option>
+<option value="4">Very strong</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Color:</label>
+<select class="f-color" name="f13[color]">
+<option value="White">White</option>
+<option value="Black">Black</option>
+<option value="Yellow">Yellow</option>
+<option value="Red">Red</option>
+<option value="OrangeRed">OrangeRed</option>
+<option value="Orange">Orange</option>
+<option value="Green">Green</option>
+<option value="Blue">Blue</option>
+<option value="VioletRed1">VioletRed1</option>
+<option value="DeepPink">DeepPink</option>
+<option value="orchid">orchid</option>
+<option value="LimeGreen">LimeGreen</option>
+<option value="gold">gold</option>
+<option value="LightGray">LightGray</option>
+<option value="silver">silver</option>
+<option value="DarkGray">DarkGray</option>
+</select>
+</div>
+
+
+<button class="button primary add-frame-text">Set</button>
+</div>
+
+</div>
+</div>
+<div class="f" id="frame-14">
+<div class="i" style="width:210px;height:224px;background:transparent url('//im.ezgif.com/tmp/f9a72553ef-gif-im/frame_13_delay-0.07s.gif') no-repeat 50% 50%"></div>
+<div class="opt" style="margin-left:210px">
+<span class="frameno">#14</span>
+
+<div class="add-form">
+<input type="hidden" value="14" class="f-num" name="f14[frame]">
+<input type="hidden" value="0" class="f-left" name="f14[left]">
+<input type="hidden" value="0" class="f-top" name="f14[top]">
+<input type="hidden" value="0" class="f-dragged" name="f14[dragged]">
+<input type="hidden" value="" class="f-file" name="f14[file]">
+<textarea name="f14[text]" class="f-text" rows="2" cols="10"></textarea>
+
+<div class="txt-opt">
+<label>Font size:</label>
+<input type="text" name="f14[size]" value="32" class="text f-size">
+</div>
+
+<div class="txt-opt">
+<label>Frames:</label>14 - 
+<input type="text" name="f14[to]" value="end" class="text f-to">
+</div>
+
+<div class="txt-opt">
+<label>Font:</label>
+<select class="f-font" name="f14[font]">
+<optgroup label="Latin extended + cyrillic">
+<option value="Impact">Impact</option>
+<option value="DidactGothic">DidactGothic</option>
+<option value="EBGaramond-Regular">EBGaramond-Regular</option>
+<option value="foo">Foo</option>
+<option value="RuslanDisplay">RuslanDisplay</option>
+<option value="Jura-Regular">Jura-Regular</option>
+<option value="Jura-Light">Jura-Light</option>
+<option value="Jura-DemiBold">Jura-DemiBold</option>
+<option value="Lobster-Regular">Lobster-Regular</option>
+<option value="MarckScript-Regular">MarckScript-Regular</option>
+<option value="OpenSans-BoldItalic">OpenSans-BoldItalic</option>
+<option value="OpenSans-Regular">OpenSans-Regular</option>
+<option value="OpenSans-Bold">OpenSans-Bold</option>
+<option value="OpenSans-Italic">OpenSans-Italic</option>
+<option value="PoiretOne-Regular">PoiretOne-Regular</option>
+<option value="PT_Sans-Narrow-Web-Bold">PT_Sans-Narrow-Web-Bold</option>
+<option value="PT_Sans-Narrow-Web-Regular">PT_Sans-Narrow-Web-Regular</option>
+<option value="RussoOne-Regular">RussoOne-Regular</option>
+<option value="Ubuntu-M">Ubuntu-M</option>
+</optgroup>
+<optgroup label="Latin">
+<option value="Coiny-Regular">Coiny-Regular</option>
+<option value="ComicNeue-Regular">ComicNeue-Regular</option>
+<option value="ComicNeue-Bold">ComicNeue-Bold</option>
+<option value="Shrikhand-Regular">Shrikhand-Regular</option>
+</optgroup>
+<optgroup label="Arabic">
+<option value="Amiri-Regular">Amiri-Regular</option>
+<option value="Amiri-Bold">Amiri-Bold</option>
+<option value="Amiri-BoldSlanted">Amiri-BoldSlanted</option>
+<option value="Amiri-Slanted">Amiri-Slanted</option>
+</optgroup>
+<optgroup label="Hebrew">
+<option value="Arimo-Regular">Arimo-Regular</option>
+<option value="Arimo-Bold">Arimo-Bold</option>
+<option value="Arimo-BoldItalic">Arimo-BoldItalic</option>
+<option value="Arimo-Italic">Arimo-Italic</option>
+</optgroup>
+<optgroup label="Thai">
+<option value="Kanit-Regular">Kanit-Regular</option>
+<option value="Kanit-Bold">Kanit-Bold</option>
+<option value="Kanit-BoldItalic">Kanit-BoldItalic</option>
+</optgroup>
+<optgroup label="Tamil">
+<option value="Catamaran-Regular">Catamaran-Regular</option>
+<option value="Catamaran-Bold">Catamaran-Bold</option>
+</optgroup>
+<optgroup label="Telugu">
+<option value="Mallanna-Regular">Mallanna-Regular</option>
+<option value="Mandali-Regular">Mandali-Regular</option>
+<option value="Timmana-Regular">Timmana-Regular</option>
+</optgroup>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Align:</label>
+<select class="f-align" name="f14[align]">
+<option value="center">Center</option>
+<option value="left">Left</option>
+<option value="right">Right</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Border:</label>
+<select class="f-border" name="f14[border]">
+<option value="none">None</option>
+<option value="1" selected="selected">Light</option>
+<option value="2">Medium</option>
+<option value="3">Strong</option>
+<option value="4">Very strong</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Color:</label>
+<select class="f-color" name="f14[color]">
+<option value="White">White</option>
+<option value="Black">Black</option>
+<option value="Yellow">Yellow</option>
+<option value="Red">Red</option>
+<option value="OrangeRed">OrangeRed</option>
+<option value="Orange">Orange</option>
+<option value="Green">Green</option>
+<option value="Blue">Blue</option>
+<option value="VioletRed1">VioletRed1</option>
+<option value="DeepPink">DeepPink</option>
+<option value="orchid">orchid</option>
+<option value="LimeGreen">LimeGreen</option>
+<option value="gold">gold</option>
+<option value="LightGray">LightGray</option>
+<option value="silver">silver</option>
+<option value="DarkGray">DarkGray</option>
+</select>
+</div>
+
+
+<button class="button primary add-frame-text">Set</button>
+</div>
+
+</div>
+</div>
+<div class="f" id="frame-15">
+<div class="i" style="width:210px;height:224px;background:transparent url('//im.ezgif.com/tmp/f9a72553ef-gif-im/frame_14_delay-0.07s.gif') no-repeat 50% 50%"></div>
+<div class="opt" style="margin-left:210px">
+<span class="frameno">#15</span>
+
+<div class="add-form">
+<input type="hidden" value="15" class="f-num" name="f15[frame]">
+<input type="hidden" value="0" class="f-left" name="f15[left]">
+<input type="hidden" value="0" class="f-top" name="f15[top]">
+<input type="hidden" value="0" class="f-dragged" name="f15[dragged]">
+<input type="hidden" value="" class="f-file" name="f15[file]">
+<textarea name="f15[text]" class="f-text" rows="2" cols="10"></textarea>
+
+<div class="txt-opt">
+<label>Font size:</label>
+<input type="text" name="f15[size]" value="32" class="text f-size">
+</div>
+
+<div class="txt-opt">
+<label>Frames:</label>15 - 
+<input type="text" name="f15[to]" value="end" class="text f-to">
+</div>
+
+<div class="txt-opt">
+<label>Font:</label>
+<select class="f-font" name="f15[font]">
+<optgroup label="Latin extended + cyrillic">
+<option value="Impact">Impact</option>
+<option value="DidactGothic">DidactGothic</option>
+<option value="EBGaramond-Regular">EBGaramond-Regular</option>
+<option value="foo">Foo</option>
+<option value="RuslanDisplay">RuslanDisplay</option>
+<option value="Jura-Regular">Jura-Regular</option>
+<option value="Jura-Light">Jura-Light</option>
+<option value="Jura-DemiBold">Jura-DemiBold</option>
+<option value="Lobster-Regular">Lobster-Regular</option>
+<option value="MarckScript-Regular">MarckScript-Regular</option>
+<option value="OpenSans-BoldItalic">OpenSans-BoldItalic</option>
+<option value="OpenSans-Regular">OpenSans-Regular</option>
+<option value="OpenSans-Bold">OpenSans-Bold</option>
+<option value="OpenSans-Italic">OpenSans-Italic</option>
+<option value="PoiretOne-Regular">PoiretOne-Regular</option>
+<option value="PT_Sans-Narrow-Web-Bold">PT_Sans-Narrow-Web-Bold</option>
+<option value="PT_Sans-Narrow-Web-Regular">PT_Sans-Narrow-Web-Regular</option>
+<option value="RussoOne-Regular">RussoOne-Regular</option>
+<option value="Ubuntu-M">Ubuntu-M</option>
+</optgroup>
+<optgroup label="Latin">
+<option value="Coiny-Regular">Coiny-Regular</option>
+<option value="ComicNeue-Regular">ComicNeue-Regular</option>
+<option value="ComicNeue-Bold">ComicNeue-Bold</option>
+<option value="Shrikhand-Regular">Shrikhand-Regular</option>
+</optgroup>
+<optgroup label="Arabic">
+<option value="Amiri-Regular">Amiri-Regular</option>
+<option value="Amiri-Bold">Amiri-Bold</option>
+<option value="Amiri-BoldSlanted">Amiri-BoldSlanted</option>
+<option value="Amiri-Slanted">Amiri-Slanted</option>
+</optgroup>
+<optgroup label="Hebrew">
+<option value="Arimo-Regular">Arimo-Regular</option>
+<option value="Arimo-Bold">Arimo-Bold</option>
+<option value="Arimo-BoldItalic">Arimo-BoldItalic</option>
+<option value="Arimo-Italic">Arimo-Italic</option>
+</optgroup>
+<optgroup label="Thai">
+<option value="Kanit-Regular">Kanit-Regular</option>
+<option value="Kanit-Bold">Kanit-Bold</option>
+<option value="Kanit-BoldItalic">Kanit-BoldItalic</option>
+</optgroup>
+<optgroup label="Tamil">
+<option value="Catamaran-Regular">Catamaran-Regular</option>
+<option value="Catamaran-Bold">Catamaran-Bold</option>
+</optgroup>
+<optgroup label="Telugu">
+<option value="Mallanna-Regular">Mallanna-Regular</option>
+<option value="Mandali-Regular">Mandali-Regular</option>
+<option value="Timmana-Regular">Timmana-Regular</option>
+</optgroup>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Align:</label>
+<select class="f-align" name="f15[align]">
+<option value="center">Center</option>
+<option value="left">Left</option>
+<option value="right">Right</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Border:</label>
+<select class="f-border" name="f15[border]">
+<option value="none">None</option>
+<option value="1" selected="selected">Light</option>
+<option value="2">Medium</option>
+<option value="3">Strong</option>
+<option value="4">Very strong</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Color:</label>
+<select class="f-color" name="f15[color]">
+<option value="White">White</option>
+<option value="Black">Black</option>
+<option value="Yellow">Yellow</option>
+<option value="Red">Red</option>
+<option value="OrangeRed">OrangeRed</option>
+<option value="Orange">Orange</option>
+<option value="Green">Green</option>
+<option value="Blue">Blue</option>
+<option value="VioletRed1">VioletRed1</option>
+<option value="DeepPink">DeepPink</option>
+<option value="orchid">orchid</option>
+<option value="LimeGreen">LimeGreen</option>
+<option value="gold">gold</option>
+<option value="LightGray">LightGray</option>
+<option value="silver">silver</option>
+<option value="DarkGray">DarkGray</option>
+</select>
+</div>
+
+
+<button class="button primary add-frame-text">Set</button>
+</div>
+
+</div>
+</div>
+<div class="f" id="frame-16">
+<div class="i" style="width:210px;height:224px;background:transparent url('//im.ezgif.com/tmp/f9a72553ef-gif-im/frame_15_delay-0.07s.gif') no-repeat 50% 50%"></div>
+<div class="opt" style="margin-left:210px">
+<span class="frameno">#16</span>
+
+<div class="add-form">
+<input type="hidden" value="16" class="f-num" name="f16[frame]">
+<input type="hidden" value="0" class="f-left" name="f16[left]">
+<input type="hidden" value="0" class="f-top" name="f16[top]">
+<input type="hidden" value="0" class="f-dragged" name="f16[dragged]">
+<input type="hidden" value="" class="f-file" name="f16[file]">
+<textarea name="f16[text]" class="f-text" rows="2" cols="10"></textarea>
+
+<div class="txt-opt">
+<label>Font size:</label>
+<input type="text" name="f16[size]" value="32" class="text f-size">
+</div>
+
+<div class="txt-opt">
+<label>Frames:</label>16 - 
+<input type="text" name="f16[to]" value="end" class="text f-to">
+</div>
+
+<div class="txt-opt">
+<label>Font:</label>
+<select class="f-font" name="f16[font]">
+<optgroup label="Latin extended + cyrillic">
+<option value="Impact">Impact</option>
+<option value="DidactGothic">DidactGothic</option>
+<option value="EBGaramond-Regular">EBGaramond-Regular</option>
+<option value="foo">Foo</option>
+<option value="RuslanDisplay">RuslanDisplay</option>
+<option value="Jura-Regular">Jura-Regular</option>
+<option value="Jura-Light">Jura-Light</option>
+<option value="Jura-DemiBold">Jura-DemiBold</option>
+<option value="Lobster-Regular">Lobster-Regular</option>
+<option value="MarckScript-Regular">MarckScript-Regular</option>
+<option value="OpenSans-BoldItalic">OpenSans-BoldItalic</option>
+<option value="OpenSans-Regular">OpenSans-Regular</option>
+<option value="OpenSans-Bold">OpenSans-Bold</option>
+<option value="OpenSans-Italic">OpenSans-Italic</option>
+<option value="PoiretOne-Regular">PoiretOne-Regular</option>
+<option value="PT_Sans-Narrow-Web-Bold">PT_Sans-Narrow-Web-Bold</option>
+<option value="PT_Sans-Narrow-Web-Regular">PT_Sans-Narrow-Web-Regular</option>
+<option value="RussoOne-Regular">RussoOne-Regular</option>
+<option value="Ubuntu-M">Ubuntu-M</option>
+</optgroup>
+<optgroup label="Latin">
+<option value="Coiny-Regular">Coiny-Regular</option>
+<option value="ComicNeue-Regular">ComicNeue-Regular</option>
+<option value="ComicNeue-Bold">ComicNeue-Bold</option>
+<option value="Shrikhand-Regular">Shrikhand-Regular</option>
+</optgroup>
+<optgroup label="Arabic">
+<option value="Amiri-Regular">Amiri-Regular</option>
+<option value="Amiri-Bold">Amiri-Bold</option>
+<option value="Amiri-BoldSlanted">Amiri-BoldSlanted</option>
+<option value="Amiri-Slanted">Amiri-Slanted</option>
+</optgroup>
+<optgroup label="Hebrew">
+<option value="Arimo-Regular">Arimo-Regular</option>
+<option value="Arimo-Bold">Arimo-Bold</option>
+<option value="Arimo-BoldItalic">Arimo-BoldItalic</option>
+<option value="Arimo-Italic">Arimo-Italic</option>
+</optgroup>
+<optgroup label="Thai">
+<option value="Kanit-Regular">Kanit-Regular</option>
+<option value="Kanit-Bold">Kanit-Bold</option>
+<option value="Kanit-BoldItalic">Kanit-BoldItalic</option>
+</optgroup>
+<optgroup label="Tamil">
+<option value="Catamaran-Regular">Catamaran-Regular</option>
+<option value="Catamaran-Bold">Catamaran-Bold</option>
+</optgroup>
+<optgroup label="Telugu">
+<option value="Mallanna-Regular">Mallanna-Regular</option>
+<option value="Mandali-Regular">Mandali-Regular</option>
+<option value="Timmana-Regular">Timmana-Regular</option>
+</optgroup>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Align:</label>
+<select class="f-align" name="f16[align]">
+<option value="center">Center</option>
+<option value="left">Left</option>
+<option value="right">Right</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Border:</label>
+<select class="f-border" name="f16[border]">
+<option value="none">None</option>
+<option value="1" selected="selected">Light</option>
+<option value="2">Medium</option>
+<option value="3">Strong</option>
+<option value="4">Very strong</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Color:</label>
+<select class="f-color" name="f16[color]">
+<option value="White">White</option>
+<option value="Black">Black</option>
+<option value="Yellow">Yellow</option>
+<option value="Red">Red</option>
+<option value="OrangeRed">OrangeRed</option>
+<option value="Orange">Orange</option>
+<option value="Green">Green</option>
+<option value="Blue">Blue</option>
+<option value="VioletRed1">VioletRed1</option>
+<option value="DeepPink">DeepPink</option>
+<option value="orchid">orchid</option>
+<option value="LimeGreen">LimeGreen</option>
+<option value="gold">gold</option>
+<option value="LightGray">LightGray</option>
+<option value="silver">silver</option>
+<option value="DarkGray">DarkGray</option>
+</select>
+</div>
+
+
+<button class="button primary add-frame-text">Set</button>
+</div>
+
+</div>
+</div>
+<div class="f" id="frame-17">
+<div class="i" style="width:210px;height:224px;background:transparent url('//im.ezgif.com/tmp/f9a72553ef-gif-im/frame_16_delay-0.07s.gif') no-repeat 50% 50%"></div>
+<div class="opt" style="margin-left:210px">
+<span class="frameno">#17</span>
+
+<div class="add-form">
+<input type="hidden" value="17" class="f-num" name="f17[frame]">
+<input type="hidden" value="0" class="f-left" name="f17[left]">
+<input type="hidden" value="0" class="f-top" name="f17[top]">
+<input type="hidden" value="0" class="f-dragged" name="f17[dragged]">
+<input type="hidden" value="" class="f-file" name="f17[file]">
+<textarea name="f17[text]" class="f-text" rows="2" cols="10"></textarea>
+
+<div class="txt-opt">
+<label>Font size:</label>
+<input type="text" name="f17[size]" value="32" class="text f-size">
+</div>
+
+<div class="txt-opt">
+<label>Frames:</label>17 - 
+<input type="text" name="f17[to]" value="end" class="text f-to">
+</div>
+
+<div class="txt-opt">
+<label>Font:</label>
+<select class="f-font" name="f17[font]">
+<optgroup label="Latin extended + cyrillic">
+<option value="Impact">Impact</option>
+<option value="DidactGothic">DidactGothic</option>
+<option value="EBGaramond-Regular">EBGaramond-Regular</option>
+<option value="foo">Foo</option>
+<option value="RuslanDisplay">RuslanDisplay</option>
+<option value="Jura-Regular">Jura-Regular</option>
+<option value="Jura-Light">Jura-Light</option>
+<option value="Jura-DemiBold">Jura-DemiBold</option>
+<option value="Lobster-Regular">Lobster-Regular</option>
+<option value="MarckScript-Regular">MarckScript-Regular</option>
+<option value="OpenSans-BoldItalic">OpenSans-BoldItalic</option>
+<option value="OpenSans-Regular">OpenSans-Regular</option>
+<option value="OpenSans-Bold">OpenSans-Bold</option>
+<option value="OpenSans-Italic">OpenSans-Italic</option>
+<option value="PoiretOne-Regular">PoiretOne-Regular</option>
+<option value="PT_Sans-Narrow-Web-Bold">PT_Sans-Narrow-Web-Bold</option>
+<option value="PT_Sans-Narrow-Web-Regular">PT_Sans-Narrow-Web-Regular</option>
+<option value="RussoOne-Regular">RussoOne-Regular</option>
+<option value="Ubuntu-M">Ubuntu-M</option>
+</optgroup>
+<optgroup label="Latin">
+<option value="Coiny-Regular">Coiny-Regular</option>
+<option value="ComicNeue-Regular">ComicNeue-Regular</option>
+<option value="ComicNeue-Bold">ComicNeue-Bold</option>
+<option value="Shrikhand-Regular">Shrikhand-Regular</option>
+</optgroup>
+<optgroup label="Arabic">
+<option value="Amiri-Regular">Amiri-Regular</option>
+<option value="Amiri-Bold">Amiri-Bold</option>
+<option value="Amiri-BoldSlanted">Amiri-BoldSlanted</option>
+<option value="Amiri-Slanted">Amiri-Slanted</option>
+</optgroup>
+<optgroup label="Hebrew">
+<option value="Arimo-Regular">Arimo-Regular</option>
+<option value="Arimo-Bold">Arimo-Bold</option>
+<option value="Arimo-BoldItalic">Arimo-BoldItalic</option>
+<option value="Arimo-Italic">Arimo-Italic</option>
+</optgroup>
+<optgroup label="Thai">
+<option value="Kanit-Regular">Kanit-Regular</option>
+<option value="Kanit-Bold">Kanit-Bold</option>
+<option value="Kanit-BoldItalic">Kanit-BoldItalic</option>
+</optgroup>
+<optgroup label="Tamil">
+<option value="Catamaran-Regular">Catamaran-Regular</option>
+<option value="Catamaran-Bold">Catamaran-Bold</option>
+</optgroup>
+<optgroup label="Telugu">
+<option value="Mallanna-Regular">Mallanna-Regular</option>
+<option value="Mandali-Regular">Mandali-Regular</option>
+<option value="Timmana-Regular">Timmana-Regular</option>
+</optgroup>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Align:</label>
+<select class="f-align" name="f17[align]">
+<option value="center">Center</option>
+<option value="left">Left</option>
+<option value="right">Right</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Border:</label>
+<select class="f-border" name="f17[border]">
+<option value="none">None</option>
+<option value="1" selected="selected">Light</option>
+<option value="2">Medium</option>
+<option value="3">Strong</option>
+<option value="4">Very strong</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Color:</label>
+<select class="f-color" name="f17[color]">
+<option value="White">White</option>
+<option value="Black">Black</option>
+<option value="Yellow">Yellow</option>
+<option value="Red">Red</option>
+<option value="OrangeRed">OrangeRed</option>
+<option value="Orange">Orange</option>
+<option value="Green">Green</option>
+<option value="Blue">Blue</option>
+<option value="VioletRed1">VioletRed1</option>
+<option value="DeepPink">DeepPink</option>
+<option value="orchid">orchid</option>
+<option value="LimeGreen">LimeGreen</option>
+<option value="gold">gold</option>
+<option value="LightGray">LightGray</option>
+<option value="silver">silver</option>
+<option value="DarkGray">DarkGray</option>
+</select>
+</div>
+
+
+<button class="button primary add-frame-text">Set</button>
+</div>
+
+</div>
+</div>
+<div class="f" id="frame-18">
+<div class="i" style="width:210px;height:224px;background:transparent url('//im.ezgif.com/tmp/f9a72553ef-gif-im/frame_17_delay-0.07s.gif') no-repeat 50% 50%"></div>
+<div class="opt" style="margin-left:210px">
+<span class="frameno">#18</span>
+
+<div class="add-form">
+<input type="hidden" value="18" class="f-num" name="f18[frame]">
+<input type="hidden" value="0" class="f-left" name="f18[left]">
+<input type="hidden" value="0" class="f-top" name="f18[top]">
+<input type="hidden" value="0" class="f-dragged" name="f18[dragged]">
+<input type="hidden" value="" class="f-file" name="f18[file]">
+<textarea name="f18[text]" class="f-text" rows="2" cols="10"></textarea>
+
+<div class="txt-opt">
+<label>Font size:</label>
+<input type="text" name="f18[size]" value="32" class="text f-size">
+</div>
+
+<div class="txt-opt">
+<label>Frames:</label>18 - 
+<input type="text" name="f18[to]" value="end" class="text f-to">
+</div>
+
+<div class="txt-opt">
+<label>Font:</label>
+<select class="f-font" name="f18[font]">
+<optgroup label="Latin extended + cyrillic">
+<option value="Impact">Impact</option>
+<option value="DidactGothic">DidactGothic</option>
+<option value="EBGaramond-Regular">EBGaramond-Regular</option>
+<option value="foo">Foo</option>
+<option value="RuslanDisplay">RuslanDisplay</option>
+<option value="Jura-Regular">Jura-Regular</option>
+<option value="Jura-Light">Jura-Light</option>
+<option value="Jura-DemiBold">Jura-DemiBold</option>
+<option value="Lobster-Regular">Lobster-Regular</option>
+<option value="MarckScript-Regular">MarckScript-Regular</option>
+<option value="OpenSans-BoldItalic">OpenSans-BoldItalic</option>
+<option value="OpenSans-Regular">OpenSans-Regular</option>
+<option value="OpenSans-Bold">OpenSans-Bold</option>
+<option value="OpenSans-Italic">OpenSans-Italic</option>
+<option value="PoiretOne-Regular">PoiretOne-Regular</option>
+<option value="PT_Sans-Narrow-Web-Bold">PT_Sans-Narrow-Web-Bold</option>
+<option value="PT_Sans-Narrow-Web-Regular">PT_Sans-Narrow-Web-Regular</option>
+<option value="RussoOne-Regular">RussoOne-Regular</option>
+<option value="Ubuntu-M">Ubuntu-M</option>
+</optgroup>
+<optgroup label="Latin">
+<option value="Coiny-Regular">Coiny-Regular</option>
+<option value="ComicNeue-Regular">ComicNeue-Regular</option>
+<option value="ComicNeue-Bold">ComicNeue-Bold</option>
+<option value="Shrikhand-Regular">Shrikhand-Regular</option>
+</optgroup>
+<optgroup label="Arabic">
+<option value="Amiri-Regular">Amiri-Regular</option>
+<option value="Amiri-Bold">Amiri-Bold</option>
+<option value="Amiri-BoldSlanted">Amiri-BoldSlanted</option>
+<option value="Amiri-Slanted">Amiri-Slanted</option>
+</optgroup>
+<optgroup label="Hebrew">
+<option value="Arimo-Regular">Arimo-Regular</option>
+<option value="Arimo-Bold">Arimo-Bold</option>
+<option value="Arimo-BoldItalic">Arimo-BoldItalic</option>
+<option value="Arimo-Italic">Arimo-Italic</option>
+</optgroup>
+<optgroup label="Thai">
+<option value="Kanit-Regular">Kanit-Regular</option>
+<option value="Kanit-Bold">Kanit-Bold</option>
+<option value="Kanit-BoldItalic">Kanit-BoldItalic</option>
+</optgroup>
+<optgroup label="Tamil">
+<option value="Catamaran-Regular">Catamaran-Regular</option>
+<option value="Catamaran-Bold">Catamaran-Bold</option>
+</optgroup>
+<optgroup label="Telugu">
+<option value="Mallanna-Regular">Mallanna-Regular</option>
+<option value="Mandali-Regular">Mandali-Regular</option>
+<option value="Timmana-Regular">Timmana-Regular</option>
+</optgroup>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Align:</label>
+<select class="f-align" name="f18[align]">
+<option value="center">Center</option>
+<option value="left">Left</option>
+<option value="right">Right</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Border:</label>
+<select class="f-border" name="f18[border]">
+<option value="none">None</option>
+<option value="1" selected="selected">Light</option>
+<option value="2">Medium</option>
+<option value="3">Strong</option>
+<option value="4">Very strong</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Color:</label>
+<select class="f-color" name="f18[color]">
+<option value="White">White</option>
+<option value="Black">Black</option>
+<option value="Yellow">Yellow</option>
+<option value="Red">Red</option>
+<option value="OrangeRed">OrangeRed</option>
+<option value="Orange">Orange</option>
+<option value="Green">Green</option>
+<option value="Blue">Blue</option>
+<option value="VioletRed1">VioletRed1</option>
+<option value="DeepPink">DeepPink</option>
+<option value="orchid">orchid</option>
+<option value="LimeGreen">LimeGreen</option>
+<option value="gold">gold</option>
+<option value="LightGray">LightGray</option>
+<option value="silver">silver</option>
+<option value="DarkGray">DarkGray</option>
+</select>
+</div>
+
+
+<button class="button primary add-frame-text">Set</button>
+</div>
+
+</div>
+</div>
+<div class="f" id="frame-19">
+<div class="i" style="width:210px;height:224px;background:transparent url('//im.ezgif.com/tmp/f9a72553ef-gif-im/frame_18_delay-0.07s.gif') no-repeat 50% 50%"></div>
+<div class="opt" style="margin-left:210px">
+<span class="frameno">#19</span>
+
+<div class="add-form">
+<input type="hidden" value="19" class="f-num" name="f19[frame]">
+<input type="hidden" value="0" class="f-left" name="f19[left]">
+<input type="hidden" value="0" class="f-top" name="f19[top]">
+<input type="hidden" value="0" class="f-dragged" name="f19[dragged]">
+<input type="hidden" value="" class="f-file" name="f19[file]">
+<textarea name="f19[text]" class="f-text" rows="2" cols="10"></textarea>
+
+<div class="txt-opt">
+<label>Font size:</label>
+<input type="text" name="f19[size]" value="32" class="text f-size">
+</div>
+
+<div class="txt-opt">
+<label>Frames:</label>19 - 
+<input type="text" name="f19[to]" value="end" class="text f-to">
+</div>
+
+<div class="txt-opt">
+<label>Font:</label>
+<select class="f-font" name="f19[font]">
+<optgroup label="Latin extended + cyrillic">
+<option value="Impact">Impact</option>
+<option value="DidactGothic">DidactGothic</option>
+<option value="EBGaramond-Regular">EBGaramond-Regular</option>
+<option value="foo">Foo</option>
+<option value="RuslanDisplay">RuslanDisplay</option>
+<option value="Jura-Regular">Jura-Regular</option>
+<option value="Jura-Light">Jura-Light</option>
+<option value="Jura-DemiBold">Jura-DemiBold</option>
+<option value="Lobster-Regular">Lobster-Regular</option>
+<option value="MarckScript-Regular">MarckScript-Regular</option>
+<option value="OpenSans-BoldItalic">OpenSans-BoldItalic</option>
+<option value="OpenSans-Regular">OpenSans-Regular</option>
+<option value="OpenSans-Bold">OpenSans-Bold</option>
+<option value="OpenSans-Italic">OpenSans-Italic</option>
+<option value="PoiretOne-Regular">PoiretOne-Regular</option>
+<option value="PT_Sans-Narrow-Web-Bold">PT_Sans-Narrow-Web-Bold</option>
+<option value="PT_Sans-Narrow-Web-Regular">PT_Sans-Narrow-Web-Regular</option>
+<option value="RussoOne-Regular">RussoOne-Regular</option>
+<option value="Ubuntu-M">Ubuntu-M</option>
+</optgroup>
+<optgroup label="Latin">
+<option value="Coiny-Regular">Coiny-Regular</option>
+<option value="ComicNeue-Regular">ComicNeue-Regular</option>
+<option value="ComicNeue-Bold">ComicNeue-Bold</option>
+<option value="Shrikhand-Regular">Shrikhand-Regular</option>
+</optgroup>
+<optgroup label="Arabic">
+<option value="Amiri-Regular">Amiri-Regular</option>
+<option value="Amiri-Bold">Amiri-Bold</option>
+<option value="Amiri-BoldSlanted">Amiri-BoldSlanted</option>
+<option value="Amiri-Slanted">Amiri-Slanted</option>
+</optgroup>
+<optgroup label="Hebrew">
+<option value="Arimo-Regular">Arimo-Regular</option>
+<option value="Arimo-Bold">Arimo-Bold</option>
+<option value="Arimo-BoldItalic">Arimo-BoldItalic</option>
+<option value="Arimo-Italic">Arimo-Italic</option>
+</optgroup>
+<optgroup label="Thai">
+<option value="Kanit-Regular">Kanit-Regular</option>
+<option value="Kanit-Bold">Kanit-Bold</option>
+<option value="Kanit-BoldItalic">Kanit-BoldItalic</option>
+</optgroup>
+<optgroup label="Tamil">
+<option value="Catamaran-Regular">Catamaran-Regular</option>
+<option value="Catamaran-Bold">Catamaran-Bold</option>
+</optgroup>
+<optgroup label="Telugu">
+<option value="Mallanna-Regular">Mallanna-Regular</option>
+<option value="Mandali-Regular">Mandali-Regular</option>
+<option value="Timmana-Regular">Timmana-Regular</option>
+</optgroup>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Align:</label>
+<select class="f-align" name="f19[align]">
+<option value="center">Center</option>
+<option value="left">Left</option>
+<option value="right">Right</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Border:</label>
+<select class="f-border" name="f19[border]">
+<option value="none">None</option>
+<option value="1" selected="selected">Light</option>
+<option value="2">Medium</option>
+<option value="3">Strong</option>
+<option value="4">Very strong</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Color:</label>
+<select class="f-color" name="f19[color]">
+<option value="White">White</option>
+<option value="Black">Black</option>
+<option value="Yellow">Yellow</option>
+<option value="Red">Red</option>
+<option value="OrangeRed">OrangeRed</option>
+<option value="Orange">Orange</option>
+<option value="Green">Green</option>
+<option value="Blue">Blue</option>
+<option value="VioletRed1">VioletRed1</option>
+<option value="DeepPink">DeepPink</option>
+<option value="orchid">orchid</option>
+<option value="LimeGreen">LimeGreen</option>
+<option value="gold">gold</option>
+<option value="LightGray">LightGray</option>
+<option value="silver">silver</option>
+<option value="DarkGray">DarkGray</option>
+</select>
+</div>
+
+
+<button class="button primary add-frame-text">Set</button>
+</div>
+
+</div>
+</div>
+<div class="f" id="frame-20">
+<div class="i" style="width:210px;height:224px;background:transparent url('//im.ezgif.com/tmp/f9a72553ef-gif-im/frame_19_delay-0.07s.gif') no-repeat 50% 50%"></div>
+<div class="opt" style="margin-left:210px">
+<span class="frameno">#20</span>
+
+<div class="add-form">
+<input type="hidden" value="20" class="f-num" name="f20[frame]">
+<input type="hidden" value="0" class="f-left" name="f20[left]">
+<input type="hidden" value="0" class="f-top" name="f20[top]">
+<input type="hidden" value="0" class="f-dragged" name="f20[dragged]">
+<input type="hidden" value="" class="f-file" name="f20[file]">
+<textarea name="f20[text]" class="f-text" rows="2" cols="10"></textarea>
+
+<div class="txt-opt">
+<label>Font size:</label>
+<input type="text" name="f20[size]" value="32" class="text f-size">
+</div>
+
+<div class="txt-opt">
+<label>Frames:</label>20 - 
+<input type="text" name="f20[to]" value="end" class="text f-to">
+</div>
+
+<div class="txt-opt">
+<label>Font:</label>
+<select class="f-font" name="f20[font]">
+<optgroup label="Latin extended + cyrillic">
+<option value="Impact">Impact</option>
+<option value="DidactGothic">DidactGothic</option>
+<option value="EBGaramond-Regular">EBGaramond-Regular</option>
+<option value="foo">Foo</option>
+<option value="RuslanDisplay">RuslanDisplay</option>
+<option value="Jura-Regular">Jura-Regular</option>
+<option value="Jura-Light">Jura-Light</option>
+<option value="Jura-DemiBold">Jura-DemiBold</option>
+<option value="Lobster-Regular">Lobster-Regular</option>
+<option value="MarckScript-Regular">MarckScript-Regular</option>
+<option value="OpenSans-BoldItalic">OpenSans-BoldItalic</option>
+<option value="OpenSans-Regular">OpenSans-Regular</option>
+<option value="OpenSans-Bold">OpenSans-Bold</option>
+<option value="OpenSans-Italic">OpenSans-Italic</option>
+<option value="PoiretOne-Regular">PoiretOne-Regular</option>
+<option value="PT_Sans-Narrow-Web-Bold">PT_Sans-Narrow-Web-Bold</option>
+<option value="PT_Sans-Narrow-Web-Regular">PT_Sans-Narrow-Web-Regular</option>
+<option value="RussoOne-Regular">RussoOne-Regular</option>
+<option value="Ubuntu-M">Ubuntu-M</option>
+</optgroup>
+<optgroup label="Latin">
+<option value="Coiny-Regular">Coiny-Regular</option>
+<option value="ComicNeue-Regular">ComicNeue-Regular</option>
+<option value="ComicNeue-Bold">ComicNeue-Bold</option>
+<option value="Shrikhand-Regular">Shrikhand-Regular</option>
+</optgroup>
+<optgroup label="Arabic">
+<option value="Amiri-Regular">Amiri-Regular</option>
+<option value="Amiri-Bold">Amiri-Bold</option>
+<option value="Amiri-BoldSlanted">Amiri-BoldSlanted</option>
+<option value="Amiri-Slanted">Amiri-Slanted</option>
+</optgroup>
+<optgroup label="Hebrew">
+<option value="Arimo-Regular">Arimo-Regular</option>
+<option value="Arimo-Bold">Arimo-Bold</option>
+<option value="Arimo-BoldItalic">Arimo-BoldItalic</option>
+<option value="Arimo-Italic">Arimo-Italic</option>
+</optgroup>
+<optgroup label="Thai">
+<option value="Kanit-Regular">Kanit-Regular</option>
+<option value="Kanit-Bold">Kanit-Bold</option>
+<option value="Kanit-BoldItalic">Kanit-BoldItalic</option>
+</optgroup>
+<optgroup label="Tamil">
+<option value="Catamaran-Regular">Catamaran-Regular</option>
+<option value="Catamaran-Bold">Catamaran-Bold</option>
+</optgroup>
+<optgroup label="Telugu">
+<option value="Mallanna-Regular">Mallanna-Regular</option>
+<option value="Mandali-Regular">Mandali-Regular</option>
+<option value="Timmana-Regular">Timmana-Regular</option>
+</optgroup>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Align:</label>
+<select class="f-align" name="f20[align]">
+<option value="center">Center</option>
+<option value="left">Left</option>
+<option value="right">Right</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Border:</label>
+<select class="f-border" name="f20[border]">
+<option value="none">None</option>
+<option value="1" selected="selected">Light</option>
+<option value="2">Medium</option>
+<option value="3">Strong</option>
+<option value="4">Very strong</option>
+</select>
+</div>
+
+<div class="txt-opt">
+<label>Color:</label>
+<select class="f-color" name="f20[color]">
+<option value="White">White</option>
+<option value="Black">Black</option>
+<option value="Yellow">Yellow</option>
+<option value="Red">Red</option>
+<option value="OrangeRed">OrangeRed</option>
+<option value="Orange">Orange</option>
+<option value="Green">Green</option>
+<option value="Blue">Blue</option>
+<option value="VioletRed1">VioletRed1</option>
+<option value="DeepPink">DeepPink</option>
+<option value="orchid">orchid</option>
+<option value="LimeGreen">LimeGreen</option>
+<option value="gold">gold</option>
+<option value="LightGray">LightGray</option>
+<option value="silver">silver</option>
+<option value="DarkGray">DarkGray</option>
+</select>
+</div>
+
+
+<button class="button primary add-frame-text">Set</button>
+</div>
+
+</div>
+</div>
+</div>
+
+<br />
+<p>
+<input type="submit" class="button primary" value="Create GIF!" name="add-text">
+</p>
+
+</form>
+
+
+
+<h2>Output movie:</h2>
+<p>(Please be patient, adding text to larger GIF images may take some time)</p>
+
+<div id="output">
+</div>
+
+<div class="txt">
+<h3>Add subtitles to animated GIFs online</h3>
+<p>
+Ezgif's online image text editor allows you to write your text over an animated GIF image without losing the animation, it can add subtitles/annotation to the whole clip or change the text on different frames/parts of the GIF.<br />
+You can use drag and drop to position the text on the image.
+</p>
+<p>
+Upload a GIF or paste GIF url to start adding text.
+</p>
+<p>
+All included fonts has full unicode character support. We also have some Arabic, Hebrew, Thai, Tamil and Telugu fonts.
+</p>
+<p>
+If you want to use the previous version of this tool, you can find it <a href="/add-text-old">here</a>.
+</p>
+</div>
+</div>
+<br style="clear:both"/>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9907860161851752" data-ad-slot="3666822830" data-ad-format="auto"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<div id="footer">
+<p id="copyright">© 2012 - 2016, ezgif.com</p><div id="links"><a href="/help">Help / FAQ</a> | <a href="/privacy">Privacy and Cookies</a> | <a href="/about">About ezgif.com</a> | Donate to support ezgif:
+<form id="pp" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHNwYJKoZIhvcNAQcEoIIHKDCCByQCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYCAiibRRABGiaqA09vemSNrhQq6RC88xGiOCSFV2ZE1tDk5L9j3jlDEwfu9YhS3MPpILv/4sj6DCPNnxIpWXZPJsVVWWhjd6hupXZBmtyGO5oH/W2hs6tI5v/hxOeW2bRsrMLaWoWfGlfmvkUtq0WL3lJTBL23xkzX5ghgk5XU+PTELMAkGBSsOAwIaBQAwgbQGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQITpFUksiKJn6AgZBrIymRLsS89kq1czYmVs4nUuGA/sYQg1UZVLfgEKlGKAHqqu6lDt5XpzbgbBrRB47ktKJvt2GzZbDxXJVtm+lKu3F9YhbHhaDc8XMW2KjX5Nj1qQty7v0iU3LqsJD4UCxlj2Q1AJ55SaxWaATvrUcv/QxRqV2iDkBBmm3WaEEzGCAnUT232BLK9Tqkyv47giOgggOHMIIDgzCCAuygAwIBAgIBADANBgkqhkiG9w0BAQUFADCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wHhcNMDQwMjEzMTAxMzE1WhcNMzUwMjEzMTAxMzE1WjCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMFHTt38RMxLXJyO2SmS+Ndl72T7oKJ4u4uw+6awntALWh03PewmIJuzbALScsTS4sZoS1fKciBGoh11gIfHzylvkdNe/hJl66/RGqrj5rFb08sAABNTzDTiqqNpJeBsYs/c2aiGozptX2RlnBktH+SUNpAajW724Nv2Wvhif6sFAgMBAAGjge4wgeswHQYDVR0OBBYEFJaffLvGbxe9WT9S1wob7BDWZJRrMIG7BgNVHSMEgbMwgbCAFJaffLvGbxe9WT9S1wob7BDWZJRroYGUpIGRMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbYIBADAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA4GBAIFfOlaagFrl71+jq6OKidbWFSE+Q4FqROvdgIONth+8kSK//Y/4ihuE4Ymvzn5ceE3S/iBSQQMjyvb+s2TWbQYDwcp129OPIbD9epdr4tJOUNiSojw7BHwYRiPh58S1xGlFgHFXwrEBb3dgNbMUa+u4qectsMAXpVHnD9wIyfmHMYIBmjCCAZYCAQEwgZQwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tAgEAMAkGBSsOAwIaBQCgXTAYBgkqhkiG9w0BCQMxCwYJKoZIhvcNAQcBMBwGCSqGSIb3DQEJBTEPFw0xNDA2MTAwOTU4MTJaMCMGCSqGSIb3DQEJBDEWBBTtaG8K22+If8sK3NwDabcxnsURqzANBgkqhkiG9w0BAQEFAASBgHx4wyRUhMDx+OgHcjJxIJL4U86pXyMuYVHRfJzqiCNSZ7l/ac5W643Wg2GdC4iunsSciJwUQ/vXWZzt/fKDzyKDeCLOglVSyNivtUvUzMa2KtnfNohQ363XFO6oLb8MeTACG2FZtUAhqFdBJaX9QF5PVZ0P9H2P8TrUj+Q7l6Wo-----END PKCS7-----">
+<input type="image" src="/images/paypal.png" name="submit" alt="Donate with PayPal - The safer, easier way to pay online!">
+</form></div></div></div>
+<script>
+(function(i, s, o, g, r, a, m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)}, i[r].l = 1 * new Date();
+a = s.createElement(o),
+m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+ga('create', 'UA-205489-8', 'ezgif.com');
+ga('send', 'pageview');
+
+if(typeof adsbygoogle !== "undefined") {
+window.addEventListener('load', function() {
+ if(typeof ga !== "undefined") {
+if(typeof adsbygoogle.loaded === "undefined") {ga('send','event','AdSense','Ads blocked', { "nonInteraction":1 });} else { ga('send','event','AdSense','Ads not blocked', { "nonInteraction":1 });}}},false);}
+
+</script>
+<!-- s:1 -->
+</body>
+</html>
